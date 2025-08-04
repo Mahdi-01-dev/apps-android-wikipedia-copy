@@ -14,6 +14,7 @@ gen-external-apklibs
 
 # Buck2
 buck-out/
+.buckconfig.local
 
 # IDE files
 *.iml
@@ -47,3 +48,5 @@ device*.png
 
 # Log Files
 *.log
+*.txt
+*.json

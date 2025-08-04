@@ -107,7 +107,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:paddingHorizontal="16dp">
-                    
+
                     <ImageView
                         android:id="@+id/historyImageView"
                         android:layout_width="24dp"

@@ -21,7 +21,7 @@ android_binary(
 
 android_library(
     name = "lib",
-    srcs = glob(["src/main/java/**/*.kt", "src/main/java/org/wikipedia/_generated_databinding/**/*.java"]),
+    srcs = glob(["src/main/java/**/*"]),
     annotation_processor_params = [
         "room.schemaLocation=/Users/b41z33d/apps-android-wikipedia/app/schemas",
     ],
