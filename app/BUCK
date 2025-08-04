@@ -22,8 +22,9 @@ android_binary(
 android_library(
     name = "lib",
     srcs = glob(["src/main/java/**/*"]),
+    language = "KOTLIN",
     annotation_processor_params = [
-        "room.schemaLocation=/Users/b41z33d/apps-android-wikipedia/app/schemas",
+        "room.schemaLocation=/Users/b41z33d/wikipedia/fbsource/apps-android-wikipedia-copy/app/schemas",
     ],
     annotation_processors = [
         "androidx.room.RoomProcessor",
@@ -51,6 +52,7 @@ android_library(
         # "//app/libs/androidx/test/uiautomator/uiautomator:uiautomator",
         "//app/libs/com/github/skydoves/balloon:balloon",
         "//app/libs/androidx/browser/browser:browser",
+        "//app/libs/io/coil-kt/coil3/coil-core:coil-core",
         "//app/libs/io/coil-kt/coil3/coil-compose:coil-compose",
         "//app/libs/io/coil-kt/coil3/coil-gif:coil-gif",
         "//app/libs/io/coil-kt/coil3/coil-network-okhttp:coil-network-okhttp",
