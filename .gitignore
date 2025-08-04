@@ -12,6 +12,9 @@ gen-external-apklibs
 /local.properties
 /build
 
+# Buck2
+buck-out/
+
 # IDE files
 *.iml
 .idea

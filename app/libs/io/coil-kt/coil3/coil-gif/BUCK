@@ -3,16 +3,16 @@
 
 remote_file(
     name = "coil-gif-remote",
-    out = "coil-gif-3.3.0.aar",
-    sha1 = "8865a95874a592eb7bda653ed7b0f00f95d9f4a1",
-    url = "mvn:https://repo1.maven.org/maven2:io.coil-kt.coil3:coil-gif:aar:3.3.0",
+    out = "coil-gif-3.2.0.aar",
+    sha1 = "15f1fcdb508337e7eba83b968fdb836aa6796899",
+    url = "mvn:https://repo1.maven.org/maven2:io.coil-kt.coil3:coil-gif:aar:3.2.0",
 )
 
 remote_file(
     name = "coil-gif-sources-remote",
-    out = "coil-gif-3.3.0-sources.jar",
+    out = "coil-gif-3.2.0-sources.jar",
     sha1 = "58975afb11873ebae4d0dacd6cd59dc3a0fe71ae",
-    url = "mvn:https://repo1.maven.org/maven2:io.coil-kt.coil3:coil-gif:src:3.3.0",
+    url = "mvn:https://repo1.maven.org/maven2:io.coil-kt.coil3:coil-gif:src:3.2.0",
 )
 
 android_prebuilt_aar(
@@ -22,8 +22,8 @@ android_prebuilt_aar(
     visibility = ["PUBLIC"],
     deps = [
         # Compile deps
-        "//app/libs/org/jetbrains/kotlin/kotlin-stdlib:kotlin-stdlib",
         "//app/libs/io/coil-kt/coil3/coil-core:coil-core",
+        "//app/libs/org/jetbrains/kotlin/kotlin-stdlib:kotlin-stdlib",
         # Runtime deps
         "//app/libs/androidx/core/core-ktx:core-ktx",
         "//app/libs/androidx/vectordrawable/vectordrawable-animated:vectordrawable-animated",

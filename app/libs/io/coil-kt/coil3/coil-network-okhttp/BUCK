@@ -3,16 +3,16 @@
 
 remote_file(
     name = "coil-network-okhttp-remote",
-    out = "coil-network-okhttp-3.3.0.jar",
+    out = "coil-network-okhttp-3.2.0.jar",
     sha1 = "2ee9336a7bdb7a09e9f691319e171efe71264b11",
-    url = "mvn:https://repo1.maven.org/maven2:io.coil-kt.coil3:coil-network-okhttp:jar:3.3.0",
+    url = "mvn:https://repo1.maven.org/maven2:io.coil-kt.coil3:coil-network-okhttp:jar:3.2.0",
 )
 
 remote_file(
     name = "coil-network-okhttp-sources-remote",
-    out = "coil-network-okhttp-3.3.0-sources.jar",
+    out = "coil-network-okhttp-3.2.0-sources.jar",
     sha1 = "473291c6ced65fe889b5f5533c59e2f8d23da9a2",
-    url = "mvn:https://repo1.maven.org/maven2:io.coil-kt.coil3:coil-network-okhttp:src:3.3.0",
+    url = "mvn:https://repo1.maven.org/maven2:io.coil-kt.coil3:coil-network-okhttp:src:3.2.0",
 )
 
 prebuilt_jar(
@@ -24,9 +24,9 @@ prebuilt_jar(
         # Compile deps
         
         # Runtime deps
-        "//app/libs/org/jetbrains/kotlin/kotlin-stdlib:kotlin-stdlib",
-        "//app/libs/io/coil-kt/coil3/coil-network-core:coil-network-core",
         "//app/libs/io/coil-kt/coil3/coil-core:coil-core",
+        "//app/libs/io/coil-kt/coil3/coil-network-core:coil-network-core",
+        "//app/libs/org/jetbrains/kotlin/kotlin-stdlib:kotlin-stdlib",
         "//app/libs/com/squareup/okhttp3/okhttp:okhttp",
     ],
 )

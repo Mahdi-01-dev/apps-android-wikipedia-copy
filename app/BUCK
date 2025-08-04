@@ -7,25 +7,28 @@ android_resource(
     ],
 )
 
+android_manifest(
+    name = "android_manifest",
+    skeleton = "src/main/AndroidManifest.xml",
+)
+
 android_binary(
     name = "app",
     keystore = "//keystores:debug",
-    manifest = "src/main/AndroidManifest.xml",
+    manifest = ":android_manifest",
     deps = [":lib"],
 )
 
 android_library(
-    name = "generated_databinding",
-    srcs = glob(["src/main/java/org/wikipedia/_generated_databinding/**/*.java"]),
-)
-
-android_library(
     name = "lib",
-    srcs = glob(["src/main/java/**/*.kt"]),
+    srcs = glob(["src/main/java/**/*.kt", "src/main/java/org/wikipedia/_generated_databinding/**/*.java"]),
     annotation_processor_params = [
         "room.schemaLocation=/Users/b41z33d/apps-android-wikipedia/app/schemas",
     ],
     annotation_processors = [
+        "androidx.room.RoomProcessor",
+    ],
+    annotation_processor_deps = [
         "//app/libs/androidx/room/room-compiler:room-compiler",
     ],
     kotlin_compiler_plugins = {
@@ -33,10 +36,8 @@ android_library(
         "//app/libs/org/jetbrains/kotlin/kotlin-parcelize-compiler:kotlin-parcelize-compiler": {},
         "//app/libs/org/jetbrains/kotlin/kotlin-serialization:kotlin-serialization": {},
     },
-    language = "KOTLIN",
     deps = [
         ":res",
-        ":generated_databinding",
         "//app/libs/androidx/preference/preference:preference",
         "//app/libs/org/maplibre/gl/android-sdk:android-sdk",
         "//app/libs/org/maplibre/gl/android-plugin-annotation-v9:android-plugin-annotation-v9",
@@ -110,3 +111,5 @@ android_library(
         "//app/libs/androidx/databinding/databinding-runtime:databinding-runtime",
     ],
 )
+
+# views, edit, onboarding, talk
