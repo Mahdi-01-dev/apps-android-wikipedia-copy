@@ -3,16 +3,16 @@
 
 remote_file(
     name = "coil-remote",
-    out = "coil-3.3.0.jar",
-    sha1 = "1c8e45b43dc20f1a8cc5751df4d525481f6579f3",
-    url = "mvn:https://repo1.maven.org/maven2:io.coil-kt.coil3:coil:jar:3.3.0",
+    out = "coil-3.2.0.jar",
+    sha1 = "47e377244a167193d18497ea40dbc35c7a099504",
+    url = "mvn:https://repo1.maven.org/maven2:io.coil-kt.coil3:coil:jar:3.2.0",
 )
 
 remote_file(
     name = "coil-sources-remote",
-    out = "coil-3.3.0-sources.jar",
+    out = "coil-3.2.0-sources.jar",
     sha1 = "c2af7936d411323b170a0cffc5ce766e27d9a2c2",
-    url = "mvn:https://repo1.maven.org/maven2:io.coil-kt.coil3:coil:src:3.3.0",
+    url = "mvn:https://repo1.maven.org/maven2:io.coil-kt.coil3:coil:src:3.2.0",
 )
 
 prebuilt_jar(
@@ -22,7 +22,7 @@ prebuilt_jar(
     visibility = ["PUBLIC"],
     deps = [
         # Compile deps
-        
+
         # Runtime deps
         "//app/libs/org/jetbrains/kotlin/kotlin-stdlib:kotlin-stdlib",
         "//app/libs/io/coil-kt/coil3/coil-core:coil-core",

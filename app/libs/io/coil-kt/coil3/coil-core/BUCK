@@ -3,16 +3,16 @@
 
 remote_file(
     name = "coil-core-remote",
-    out = "coil-core-3.3.0.jar",
-    sha1 = "02a5f7430c7b16d6e15204c05fec51ccde6702f5",
-    url = "mvn:https://repo1.maven.org/maven2:io.coil-kt.coil3:coil-core:jar:3.3.0",
+    out = "coil-core-3.2.0.jar",
+    sha1 = "e4afd6068e888c46ea10a4f1f0f7b0c04e7e7633",
+    url = "mvn:https://repo1.maven.org/maven2:io.coil-kt.coil3:coil-core:jar:3.2.0",
 )
 
 remote_file(
     name = "coil-core-sources-remote",
-    out = "coil-core-3.3.0-sources.jar",
-    sha1 = "b86203ff25f42c4a2dd1b049e0eb263bf8325ff8",
-    url = "mvn:https://repo1.maven.org/maven2:io.coil-kt.coil3:coil-core:src:3.3.0",
+    out = "coil-core-3.2.0-sources.jar",
+    sha1 = "b8f628967d8996b3237dc73e95f7bba8d1990423",
+    url = "mvn:https://repo1.maven.org/maven2:io.coil-kt.coil3:coil-core:src:3.2.0",
 )
 
 prebuilt_jar(
@@ -22,7 +22,7 @@ prebuilt_jar(
     visibility = ["PUBLIC"],
     deps = [
         # Compile deps
-        
+
         # Runtime deps
         "//app/libs/com/squareup/okio/okio:okio",
         "//app/libs/org/jetbrains/skiko/skiko:skiko",

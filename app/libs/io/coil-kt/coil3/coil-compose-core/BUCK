@@ -3,16 +3,16 @@
 
 remote_file(
     name = "coil-compose-core-remote",
-    out = "coil-compose-core-3.3.0.jar",
-    sha1 = "61d3934a550e1998a02be85f39ff536fff299ace",
-    url = "mvn:https://repo1.maven.org/maven2:io.coil-kt.coil3:coil-compose-core:jar:3.3.0",
+    out = "coil-compose-core-3.2.0.jar",
+    sha1 = "aa480de824daa51c0bf047f627843ca4cec9d18f",
+    url = "mvn:https://repo1.maven.org/maven2:io.coil-kt.coil3:coil-compose-core:jar:3.2.0",
 )
 
 remote_file(
     name = "coil-compose-core-sources-remote",
-    out = "coil-compose-core-3.3.0-sources.jar",
-    sha1 = "3f4ca2c0690d8aff050259e029c6375216c9cbe3",
-    url = "mvn:https://repo1.maven.org/maven2:io.coil-kt.coil3:coil-compose-core:src:3.3.0",
+    out = "coil-compose-core-3.2.0-sources.jar",
+    sha1 = "8e887d883349877545d11f7a9a1a8951e0b9e962",
+    url = "mvn:https://repo1.maven.org/maven2:io.coil-kt.coil3:coil-compose-core:src:3.2.0",
 )
 
 prebuilt_jar(
@@ -22,7 +22,7 @@ prebuilt_jar(
     visibility = ["PUBLIC"],
     deps = [
         # Compile deps
-        
+
         # Runtime deps
         "//app/libs/org/jetbrains/kotlin/kotlin-stdlib:kotlin-stdlib",
         "//app/libs/org/jetbrains/compose/foundation/foundation:foundation",
