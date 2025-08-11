@@ -76,7 +76,7 @@ org.jetbrains.kotlin:kotlin-compose-compiler-plugin-embeddable:2.2.0
 org.jetbrains.kotlin:kotlin-parcelize-compiler:2.2.0
 org.jetbrains.kotlin:kotlin-parcelize-runtime:2.2.0
 androidx.databinding:databinding-runtime:8.9.1
-io.coil-kt.coil3:coil-core-jvm:3.2.0
-io.coil-kt.coil3:coil-compose-jvm:3.2.0
+io.coil-kt.coil3:coil-core-android:3.2.0
+io.coil-kt.coil3:coil-compose-android:3.2.0
 io.coil-kt.coil3:coil-network-okhttp-jvm:3.2.0
-io.coil-kt.coil3:coil-svg-jvm:3.2.0
+io.coil-kt.coil3:coil-svg-android:3.2.0
