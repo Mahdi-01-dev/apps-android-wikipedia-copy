@@ -3,16 +3,16 @@
 
 remote_file(
     name = "foundation-layout-remote",
-    out = "foundation-layout-1.8.2.aar",
+    out = "foundation-layout-1.8.3.aar",
     sha1 = "51c67e319f1ae72a9ffbb19e2e37659875498e70",
-    url = "mvn:https://maven.google.com:androidx.compose.foundation:foundation-layout:aar:1.8.2",
+    url = "mvn:https://maven.google.com:androidx.compose.foundation:foundation-layout:aar:1.8.3",
 )
 
 remote_file(
     name = "foundation-layout-sources-remote",
-    out = "foundation-layout-1.8.2-sources.jar",
+    out = "foundation-layout-1.8.3-sources.jar",
     sha1 = "c94ce5aacde34b1cf87c5a0c8b95fcaa961b797a",
-    url = "mvn:https://maven.google.com:androidx.compose.foundation:foundation-layout:src:1.8.2",
+    url = "mvn:https://maven.google.com:androidx.compose.foundation:foundation-layout:src:1.8.3",
 )
 
 android_prebuilt_aar(

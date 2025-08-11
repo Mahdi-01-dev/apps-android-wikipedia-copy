@@ -3,16 +3,16 @@
 
 remote_file(
     name = "espresso-web-remote",
-    out = "espresso-web-3.7.0.aar",
-    sha1 = "e74f077b69ae77a47877be9e109c6b37e717ab84",
-    url = "mvn:https://maven.google.com:androidx.test.espresso:espresso-web:aar:3.7.0",
+    out = "espresso-web-3.6.1.aar",
+    sha1 = "673675e1c7badb642e8434d8adf5f456ce04699e",
+    url = "mvn:https://maven.google.com:androidx.test.espresso:espresso-web:aar:3.6.1",
 )
 
 remote_file(
     name = "espresso-web-sources-remote",
-    out = "espresso-web-3.7.0-sources.jar",
-    sha1 = "6336e52f9aebc1b2c6f3a1842a05e021a2a5535c",
-    url = "mvn:https://maven.google.com:androidx.test.espresso:espresso-web:src:3.7.0",
+    out = "espresso-web-3.6.1-sources.jar",
+    sha1 = "ef5cb772ce8cbf46e41ce9828975a7d13767d550",
+    url = "mvn:https://maven.google.com:androidx.test.espresso:espresso-web:src:3.6.1",
 )
 
 android_prebuilt_aar(
@@ -24,13 +24,13 @@ android_prebuilt_aar(
         # Compile deps
         "//app/libs/com/google/guava/listenablefuture:listenablefuture",
         "//app/libs/org/jetbrains/kotlin/kotlin-stdlib:kotlin-stdlib",
-        "//app/libs/androidx/concurrent/concurrent-futures:concurrent-futures",
+        "//app/libs/com/google/errorprone/error_prone_annotations:error_prone_annotations",
         "//app/libs/org/ccil/cowan/tagsoup/tagsoup:tagsoup",
+        "//app/libs/androidx/concurrent/concurrent-futures:concurrent-futures",
         "//app/libs/org/hamcrest/hamcrest-library:hamcrest-library",
         "//app/libs/androidx/annotation/annotation:annotation",
         "//app/libs/com/google/code/findbugs/jsr305:jsr305",
         "//app/libs/androidx/test/monitor:monitor",
-        "//app/libs/com/google/errorprone/error_prone_annotations:error_prone_annotations",
         "//app/libs/org/hamcrest/hamcrest-core:hamcrest-core",
         "//app/libs/androidx/test/espresso/espresso-core:espresso-core",
         "//app/libs/androidx/test/runner:runner",

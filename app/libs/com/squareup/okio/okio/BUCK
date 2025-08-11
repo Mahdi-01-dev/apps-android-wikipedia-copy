@@ -3,16 +3,16 @@
 
 remote_file(
     name = "okio-remote",
-    out = "okio-3.15.0.jar",
-    sha1 = "034ba1e16bc326f169e58f8bb9132da751328090",
-    url = "mvn:https://repo1.maven.org/maven2:com.squareup.okio:okio:jar:3.15.0",
+    out = "okio-3.11.0.jar",
+    sha1 = "b9eacde07c931796546811f87107c973e2243831",
+    url = "mvn:https://repo1.maven.org/maven2:com.squareup.okio:okio:jar:3.11.0",
 )
 
 remote_file(
     name = "okio-sources-remote",
-    out = "okio-3.15.0-sources.jar",
-    sha1 = "d08f4c2ce4949d5f69b94d6780e71e4657a3820d",
-    url = "mvn:https://repo1.maven.org/maven2:com.squareup.okio:okio:src:3.15.0",
+    out = "okio-3.11.0-sources.jar",
+    sha1 = "69aabeef4020b64a58c3e3d11fb66712966f9195",
+    url = "mvn:https://repo1.maven.org/maven2:com.squareup.okio:okio:src:3.11.0",
 )
 
 prebuilt_jar(

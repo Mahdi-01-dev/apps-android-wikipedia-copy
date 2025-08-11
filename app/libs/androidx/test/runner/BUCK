@@ -3,16 +3,16 @@
 
 remote_file(
     name = "runner-remote",
-    out = "runner-1.7.0.aar",
-    sha1 = "ad0c5f9cec6021f875a7bd1ed9599083b144f58d",
-    url = "mvn:https://maven.google.com:androidx.test:runner:aar:1.7.0",
+    out = "runner-1.6.1.aar",
+    sha1 = "cfe9ea71877d4aeba8549598b9d270aced44f908",
+    url = "mvn:https://maven.google.com:androidx.test:runner:aar:1.6.1",
 )
 
 remote_file(
     name = "runner-sources-remote",
-    out = "runner-1.7.0-sources.jar",
-    sha1 = "98be1207f313bdf344a95ac60c576d578e36bc17",
-    url = "mvn:https://maven.google.com:androidx.test:runner:src:1.7.0",
+    out = "runner-1.6.1-sources.jar",
+    sha1 = "94d2c587aee44dd1fb38b5112f21623138224ba7",
+    url = "mvn:https://maven.google.com:androidx.test:runner:src:1.6.1",
 )
 
 android_prebuilt_aar(
@@ -23,8 +23,8 @@ android_prebuilt_aar(
     deps = [
         # Compile deps
         "//app/libs/androidx/test/services/storage:storage",
-        "//app/libs/androidx/tracing/tracing:tracing",
         "//app/libs/androidx/annotation/annotation:annotation",
+        "//app/libs/androidx/tracing/tracing:tracing",
         "//app/libs/androidx/test/monitor:monitor",
         "//app/libs/junit/junit:junit",
         # Runtime deps

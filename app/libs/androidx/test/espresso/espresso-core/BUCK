@@ -3,16 +3,16 @@
 
 remote_file(
     name = "espresso-core-remote",
-    out = "espresso-core-3.7.0.aar",
-    sha1 = "9f54800d1df0414ce8584a05637f8004b344bd12",
-    url = "mvn:https://maven.google.com:androidx.test.espresso:espresso-core:aar:3.7.0",
+    out = "espresso-core-3.6.1.aar",
+    sha1 = "6702e4908b6fb23d08611983045e319e25bd6e5f",
+    url = "mvn:https://maven.google.com:androidx.test.espresso:espresso-core:aar:3.6.1",
 )
 
 remote_file(
     name = "espresso-core-sources-remote",
-    out = "espresso-core-3.7.0-sources.jar",
-    sha1 = "8954e2704fa0d63081a6f95e8644472667567fed",
-    url = "mvn:https://maven.google.com:androidx.test.espresso:espresso-core:src:3.7.0",
+    out = "espresso-core-3.6.1-sources.jar",
+    sha1 = "ae28cd7a813c807ad2bd255e4eca950f75bea24f",
+    url = "mvn:https://maven.google.com:androidx.test.espresso:espresso-core:src:3.6.1",
 )
 
 android_prebuilt_aar(
@@ -22,18 +22,18 @@ android_prebuilt_aar(
     visibility = ["PUBLIC"],
     deps = [
         # Compile deps
-        "//app/libs/androidx/test/espresso/espresso-idling-resource:espresso-idling-resource",
         "//app/libs/androidx/test/services/storage:storage",
+        "//app/libs/androidx/test/espresso/espresso-idling-resource:espresso-idling-resource",
         "//app/libs/androidx/concurrent/concurrent-futures:concurrent-futures",
         "//app/libs/javax/inject/javax.inject:javax.inject",
+        "//app/libs/androidx/annotation/annotation:annotation",
         "//app/libs/androidx/test/monitor:monitor",
-        "//app/libs/com/google/errorprone/error_prone_annotations:error_prone_annotations",
         "//app/libs/org/hamcrest/hamcrest-core:hamcrest-core",
         "//app/libs/androidx/test/core:core",
         "//app/libs/com/google/guava/listenablefuture:listenablefuture",
         "//app/libs/org/jetbrains/kotlin/kotlin-stdlib:kotlin-stdlib",
+        "//app/libs/com/google/errorprone/error_prone_annotations:error_prone_annotations",
         "//app/libs/org/hamcrest/hamcrest-library:hamcrest-library",
-        "//app/libs/androidx/annotation/annotation:annotation",
         "//app/libs/com/google/code/findbugs/jsr305:jsr305",
         "//app/libs/androidx/test/runner:runner",
         "//app/libs/junit/junit:junit",

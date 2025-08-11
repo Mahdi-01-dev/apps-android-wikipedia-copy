@@ -24,8 +24,8 @@ prebuilt_jar(
         # Compile deps
 
         # Runtime deps
-        "//app/libs/org/jetbrains/kotlin/kotlin-stdlib:kotlin-stdlib",
-        "//app/libs/org/jetbrains/compose/foundation/foundation:foundation",
         "//app/libs/io/coil-kt/coil3/coil-core:coil-core",
+        "//app/libs/androidx/compose/foundation/foundation:foundation",
+        "//app/libs/org/jetbrains/kotlin/kotlin-stdlib:kotlin-stdlib",
     ],
 )

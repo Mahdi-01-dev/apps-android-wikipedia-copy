@@ -3,16 +3,16 @@
 
 remote_file(
     name = "navigation-runtime-android-remote",
-    out = "navigation-runtime-android-2.9.3.aar",
-    sha1 = "70e0d80a7fa3d8fd45534d996b2b165c5054c783",
-    url = "mvn:https://maven.google.com:androidx.navigation:navigation-runtime-android:aar:2.9.3",
+    out = "navigation-runtime-android-2.9.2.aar",
+    sha1 = "bc65676b11fdaa29047ffcf4542ed2bc3753e926",
+    url = "mvn:https://maven.google.com:androidx.navigation:navigation-runtime-android:aar:2.9.2",
 )
 
 remote_file(
     name = "navigation-runtime-android-sources-remote",
-    out = "navigation-runtime-android-2.9.3-sources.jar",
-    sha1 = "6203fe07fc57c3b294fec0964ee90add58b7fadb",
-    url = "mvn:https://maven.google.com:androidx.navigation:navigation-runtime-android:src:2.9.3",
+    out = "navigation-runtime-android-2.9.2-sources.jar",
+    sha1 = "82f35fb2be2991eb9be0eb0e324d7792125dd099",
+    url = "mvn:https://maven.google.com:androidx.navigation:navigation-runtime-android:src:2.9.2",
 )
 
 android_prebuilt_aar(
@@ -23,6 +23,7 @@ android_prebuilt_aar(
     deps = [
         # Compile deps
         "//app/libs/androidx/activity/activity-ktx:activity-ktx",
+        "//app/libs/androidx/navigation/navigation-common:navigation-common",
         "//app/libs/androidx/lifecycle/lifecycle-viewmodel-ktx:lifecycle-viewmodel-ktx",
         "//app/libs/androidx/annotation/annotation-experimental:annotation-experimental",
         "//app/libs/androidx/core/core-ktx:core-ktx",
@@ -32,7 +33,6 @@ android_prebuilt_aar(
         "//app/libs/org/jetbrains/kotlinx/kotlinx-coroutines-core-jvm:kotlinx-coroutines-core-jvm",
         "//app/libs/androidx/lifecycle/lifecycle-common-jvm:lifecycle-common-jvm",
         "//app/libs/androidx/lifecycle/lifecycle-viewmodel-android:lifecycle-viewmodel-android",
-        "//app/libs/androidx/navigation/navigation-common:navigation-common",
         # Runtime deps
         "//app/libs/androidx/collection/collection-jvm:collection-jvm",
         "//app/libs/org/jetbrains/kotlinx/kotlinx-serialization-core-jvm:kotlinx-serialization-core-jvm",

@@ -3,16 +3,16 @@
 
 remote_file(
     name = "espresso-intents-remote",
-    out = "espresso-intents-3.7.0.aar",
-    sha1 = "48340da23d62efdcddb5e3c6cda409d6fde86fd9",
-    url = "mvn:https://maven.google.com:androidx.test.espresso:espresso-intents:aar:3.7.0",
+    out = "espresso-intents-3.6.1.aar",
+    sha1 = "73642e0271b18dc3ddff9b48d3aed6e78ffb4de2",
+    url = "mvn:https://maven.google.com:androidx.test.espresso:espresso-intents:aar:3.6.1",
 )
 
 remote_file(
     name = "espresso-intents-sources-remote",
-    out = "espresso-intents-3.7.0-sources.jar",
-    sha1 = "5a3a24df613ca2e6e20c81c515cff6ed972a8be3",
-    url = "mvn:https://maven.google.com:androidx.test.espresso:espresso-intents:src:3.7.0",
+    out = "espresso-intents-3.6.1-sources.jar",
+    sha1 = "f2e4dacade3a28c739103f910fcf9b5b1ca4ff51",
+    url = "mvn:https://maven.google.com:androidx.test.espresso:espresso-intents:src:3.6.1",
 )
 
 android_prebuilt_aar(
@@ -23,10 +23,10 @@ android_prebuilt_aar(
     deps = [
         # Compile deps
         "//app/libs/org/jetbrains/kotlin/kotlin-stdlib:kotlin-stdlib",
+        "//app/libs/com/google/errorprone/error_prone_annotations:error_prone_annotations",
         "//app/libs/androidx/test/rules:rules",
         "//app/libs/org/hamcrest/hamcrest-library:hamcrest-library",
         "//app/libs/androidx/annotation/annotation:annotation",
-        "//app/libs/com/google/errorprone/error_prone_annotations:error_prone_annotations",
         "//app/libs/org/hamcrest/hamcrest-core:hamcrest-core",
         "//app/libs/androidx/test/core:core",
         "//app/libs/androidx/test/espresso/espresso-core:espresso-core",

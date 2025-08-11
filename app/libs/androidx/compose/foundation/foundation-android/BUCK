@@ -3,16 +3,16 @@
 
 remote_file(
     name = "foundation-android-remote",
-    out = "foundation-android-1.8.2.aar",
-    sha1 = "ee58c70a6c027d61b2506064f2db9c92208addd3",
-    url = "mvn:https://maven.google.com:androidx.compose.foundation:foundation-android:aar:1.8.2",
+    out = "foundation-android-1.8.3.aar",
+    sha1 = "483ad37b09c237fd7609210f24b1712a7ed6cd62",
+    url = "mvn:https://maven.google.com:androidx.compose.foundation:foundation-android:aar:1.8.3",
 )
 
 remote_file(
     name = "foundation-android-sources-remote",
-    out = "foundation-android-1.8.2-sources.jar",
+    out = "foundation-android-1.8.3-sources.jar",
     sha1 = "56e652ff40b01300c4c753c1a58a439b90934b84",
-    url = "mvn:https://maven.google.com:androidx.compose.foundation:foundation-android:src:1.8.2",
+    url = "mvn:https://maven.google.com:androidx.compose.foundation:foundation-android:src:1.8.3",
 )
 
 android_prebuilt_aar(
@@ -22,18 +22,18 @@ android_prebuilt_aar(
     visibility = ["PUBLIC"],
     deps = [
         # Compile deps
-        "//app/libs/androidx/compose/animation/animation-android:animation-android",
         "//app/libs/androidx/collection/collection-jvm:collection-jvm",
+        "//app/libs/androidx/compose/animation/animation-android:animation-android",
         "//app/libs/androidx/annotation/annotation-experimental:annotation-experimental",
         "//app/libs/androidx/compose/ui/ui-android:ui-android",
-        "//app/libs/androidx/annotation/annotation:annotation",
         "//app/libs/androidx/compose/runtime/runtime-android:runtime-android",
+        "//app/libs/androidx/annotation/annotation:annotation",
         # Runtime deps
         "//app/libs/org/jetbrains/kotlin/kotlin-stdlib:kotlin-stdlib",
         "//app/libs/androidx/compose/foundation/foundation-layout:foundation-layout",
         "//app/libs/androidx/emoji2/emoji2:emoji2",
-        "//app/libs/androidx/core/core:core",
         "//app/libs/androidx/compose/ui/ui-text-android:ui-text-android",
+        "//app/libs/androidx/core/core:core",
         "//app/libs/androidx/compose/ui/ui-util-android:ui-util-android",
     ],
 )

@@ -3,16 +3,16 @@
 
 remote_file(
     name = "work-runtime-remote",
-    out = "work-runtime-2.10.3.aar",
-    sha1 = "59c35afaedc1f1a6d857024eb7347ce724781b97",
-    url = "mvn:https://maven.google.com:androidx.work:work-runtime:aar:2.10.3",
+    out = "work-runtime-2.10.2.aar",
+    sha1 = "5d0da9ca6a628c7c0915357964dba73c284611aa",
+    url = "mvn:https://maven.google.com:androidx.work:work-runtime:aar:2.10.2",
 )
 
 remote_file(
     name = "work-runtime-sources-remote",
-    out = "work-runtime-2.10.3-sources.jar",
-    sha1 = "621fc3ff7f3acf4fb14da5989c0c667741fd9805",
-    url = "mvn:https://maven.google.com:androidx.work:work-runtime:src:2.10.3",
+    out = "work-runtime-2.10.2-sources.jar",
+    sha1 = "8e690ecda995e2699bb430f3f89b27003c3dd265",
+    url = "mvn:https://maven.google.com:androidx.work:work-runtime:src:2.10.2",
 )
 
 android_prebuilt_aar(

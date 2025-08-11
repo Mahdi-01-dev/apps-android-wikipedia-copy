@@ -3,16 +3,16 @@
 
 remote_file(
     name = "navigation-compose-remote",
-    out = "navigation-compose-2.9.3.aar",
+    out = "navigation-compose-2.9.2.aar",
     sha1 = "f189d26b2b12ddb23ff74d9d77571fe7447ae680",
-    url = "mvn:https://maven.google.com:androidx.navigation:navigation-compose:aar:2.9.3",
+    url = "mvn:https://maven.google.com:androidx.navigation:navigation-compose:aar:2.9.2",
 )
 
 remote_file(
     name = "navigation-compose-sources-remote",
-    out = "navigation-compose-2.9.3-sources.jar",
+    out = "navigation-compose-2.9.2-sources.jar",
     sha1 = "20c504a8c34f9990dd19d8fc72e8e9028bba120b",
-    url = "mvn:https://maven.google.com:androidx.navigation:navigation-compose:src:2.9.3",
+    url = "mvn:https://maven.google.com:androidx.navigation:navigation-compose:src:2.9.2",
 )
 
 android_prebuilt_aar(
@@ -25,11 +25,11 @@ android_prebuilt_aar(
         "//app/libs/androidx/navigation/navigation-compose-android:navigation-compose-android",
         # Runtime deps
         "//app/libs/androidx/compose/runtime/runtime:runtime",
+        "//app/libs/androidx/navigation/navigation-common:navigation-common",
         "//app/libs/androidx/compose/runtime/runtime-saveable:runtime-saveable",
         "//app/libs/androidx/compose/animation/animation:animation",
         "//app/libs/org/jetbrains/kotlin/kotlin-stdlib:kotlin-stdlib",
         "//app/libs/androidx/navigation/navigation-runtime:navigation-runtime",
         "//app/libs/androidx/compose/ui/ui:ui",
-        "//app/libs/androidx/navigation/navigation-common:navigation-common",
     ],
 )

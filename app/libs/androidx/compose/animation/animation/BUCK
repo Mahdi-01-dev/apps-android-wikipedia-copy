@@ -3,16 +3,16 @@
 
 remote_file(
     name = "animation-remote",
-    out = "animation-1.8.2.aar",
+    out = "animation-1.8.3.aar",
     sha1 = "54f5f073eaa66f57823f3c5831d3ba88b730b17a",
-    url = "mvn:https://maven.google.com:androidx.compose.animation:animation:aar:1.8.2",
+    url = "mvn:https://maven.google.com:androidx.compose.animation:animation:aar:1.8.3",
 )
 
 remote_file(
     name = "animation-sources-remote",
-    out = "animation-1.8.2-sources.jar",
+    out = "animation-1.8.3-sources.jar",
     sha1 = "270eae30ab43da6b9b87e2355da4dfae112afd03",
-    url = "mvn:https://maven.google.com:androidx.compose.animation:animation:src:1.8.2",
+    url = "mvn:https://maven.google.com:androidx.compose.animation:animation:src:1.8.3",
 )
 
 android_prebuilt_aar(
@@ -24,8 +24,8 @@ android_prebuilt_aar(
         # Compile deps
         "//app/libs/androidx/compose/animation/animation-android:animation-android",
         # Runtime deps
-        "//app/libs/androidx/compose/foundation/foundation-layout:foundation-layout",
         "//app/libs/androidx/compose/runtime/runtime:runtime",
+        "//app/libs/androidx/compose/foundation/foundation-layout:foundation-layout",
         "//app/libs/androidx/compose/ui/ui-geometry:ui-geometry",
         "//app/libs/androidx/compose/animation/animation-core:animation-core",
     ],

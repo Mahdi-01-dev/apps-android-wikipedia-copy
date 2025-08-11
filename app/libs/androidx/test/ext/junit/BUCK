@@ -3,16 +3,16 @@
 
 remote_file(
     name = "junit-remote",
-    out = "junit-1.3.0.aar",
-    sha1 = "1461515f981eb6342553074fc9ffa0528c083f86",
-    url = "mvn:https://maven.google.com:androidx.test.ext:junit:aar:1.3.0",
+    out = "junit-1.2.1.aar",
+    sha1 = "3e0b80141a354fce2195baee82a35127fceddfce",
+    url = "mvn:https://maven.google.com:androidx.test.ext:junit:aar:1.2.1",
 )
 
 remote_file(
     name = "junit-sources-remote",
-    out = "junit-1.3.0-sources.jar",
-    sha1 = "3beee303ec5f7bb9c2acfd04b10403494df90b9d",
-    url = "mvn:https://maven.google.com:androidx.test.ext:junit:src:1.3.0",
+    out = "junit-1.2.1-sources.jar",
+    sha1 = "f170b63147430a6b8074a09070d1759edd0237b6",
+    url = "mvn:https://maven.google.com:androidx.test.ext:junit:src:1.2.1",
 )
 
 android_prebuilt_aar(

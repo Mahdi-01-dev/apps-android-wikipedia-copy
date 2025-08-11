@@ -3,16 +3,16 @@
 
 remote_file(
     name = "concurrent-futures-ktx-remote",
-    out = "concurrent-futures-ktx-1.2.0.jar",
-    sha1 = "13b49fdb58c74bdfb12eb131b5e22d6d09683e30",
-    url = "mvn:https://maven.google.com:androidx.concurrent:concurrent-futures-ktx:jar:1.2.0",
+    out = "concurrent-futures-ktx-1.1.0.jar",
+    sha1 = "b4c245baf36d1a9e7defaf3be84f7a2ad4e1c797",
+    url = "mvn:https://maven.google.com:androidx.concurrent:concurrent-futures-ktx:jar:1.1.0",
 )
 
 remote_file(
     name = "concurrent-futures-ktx-sources-remote",
-    out = "concurrent-futures-ktx-1.2.0-sources.jar",
-    sha1 = "034891c54204e087f47c3009c15b688deb81dbdc",
-    url = "mvn:https://maven.google.com:androidx.concurrent:concurrent-futures-ktx:src:1.2.0",
+    out = "concurrent-futures-ktx-1.1.0-sources.jar",
+    sha1 = "ef04086fb17756bde36beb2a723e9be2016a73a4",
+    url = "mvn:https://maven.google.com:androidx.concurrent:concurrent-futures-ktx:src:1.1.0",
 )
 
 prebuilt_jar(
@@ -22,8 +22,8 @@ prebuilt_jar(
     visibility = ["PUBLIC"],
     deps = [
         # Compile deps
-        "//app/libs/org/jetbrains/kotlin/kotlin-stdlib:kotlin-stdlib",
         "//app/libs/org/jetbrains/kotlinx/kotlinx-coroutines-core:kotlinx-coroutines-core",
+        "//app/libs/org/jetbrains/kotlin/kotlin-stdlib:kotlin-stdlib",
         "//app/libs/androidx/concurrent/concurrent-futures:concurrent-futures",
         # Runtime deps
         

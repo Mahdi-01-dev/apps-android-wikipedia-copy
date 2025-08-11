@@ -3,16 +3,16 @@
 
 remote_file(
     name = "work-runtime-ktx-remote",
-    out = "work-runtime-ktx-2.10.3.aar",
-    sha1 = "128fc5d8fa9539edb9a58ed76a0f8d94d12915e6",
-    url = "mvn:https://maven.google.com:androidx.work:work-runtime-ktx:aar:2.10.3",
+    out = "work-runtime-ktx-2.10.2.aar",
+    sha1 = "23f0d427efcb146bfde789a659374c3cb4a9ea2a",
+    url = "mvn:https://maven.google.com:androidx.work:work-runtime-ktx:aar:2.10.2",
 )
 
 remote_file(
     name = "work-runtime-ktx-sources-remote",
-    out = "work-runtime-ktx-2.10.3-sources.jar",
+    out = "work-runtime-ktx-2.10.2-sources.jar",
     sha1 = "66ac1feafafc2d29b82f59287681b0f806a662b7",
-    url = "mvn:https://maven.google.com:androidx.work:work-runtime-ktx:src:2.10.3",
+    url = "mvn:https://maven.google.com:androidx.work:work-runtime-ktx:src:2.10.2",
 )
 
 android_prebuilt_aar(

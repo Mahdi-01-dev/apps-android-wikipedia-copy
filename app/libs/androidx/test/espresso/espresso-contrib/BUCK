@@ -3,16 +3,16 @@
 
 remote_file(
     name = "espresso-contrib-remote",
-    out = "espresso-contrib-3.7.0.aar",
-    sha1 = "2f0b9049c9d27da44359c7d2c042d09074013bf5",
-    url = "mvn:https://maven.google.com:androidx.test.espresso:espresso-contrib:aar:3.7.0",
+    out = "espresso-contrib-3.6.1.aar",
+    sha1 = "b7e3b55c3f4bf84c6664a7bcdaaf459ce824f58c",
+    url = "mvn:https://maven.google.com:androidx.test.espresso:espresso-contrib:aar:3.6.1",
 )
 
 remote_file(
     name = "espresso-contrib-sources-remote",
-    out = "espresso-contrib-3.7.0-sources.jar",
+    out = "espresso-contrib-3.6.1-sources.jar",
     sha1 = "04406289a0065fc6283dbe8f0095a73ed1e798b8",
-    url = "mvn:https://maven.google.com:androidx.test.espresso:espresso-contrib:src:3.7.0",
+    url = "mvn:https://maven.google.com:androidx.test.espresso:espresso-contrib:src:3.6.1",
 )
 
 android_prebuilt_aar(
@@ -22,9 +22,9 @@ android_prebuilt_aar(
     visibility = ["PUBLIC"],
     deps = [
         # Compile deps
-        "//app/libs/androidx/appcompat/appcompat:appcompat",
-        "//app/libs/androidx/drawerlayout/drawerlayout:drawerlayout",
         "//app/libs/androidx/viewpager/viewpager:viewpager",
+        "//app/libs/androidx/drawerlayout/drawerlayout:drawerlayout",
+        "//app/libs/androidx/appcompat/appcompat:appcompat",
         "//app/libs/com/google/android/apps/common/testing/accessibility/framework/accessibility-test-framework:accessibility-test-framework",
         "//app/libs/org/hamcrest/hamcrest-library:hamcrest-library",
         "//app/libs/androidx/annotation/annotation:annotation",

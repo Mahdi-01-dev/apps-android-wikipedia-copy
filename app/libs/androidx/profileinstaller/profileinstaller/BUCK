@@ -3,16 +3,16 @@
 
 remote_file(
     name = "profileinstaller-remote",
-    out = "profileinstaller-1.4.0.aar",
-    sha1 = "6b6262e9ca50d1f75a496f3b64ebeb092a9d42eb",
-    url = "mvn:https://maven.google.com:androidx.profileinstaller:profileinstaller:aar:1.4.0",
+    out = "profileinstaller-1.4.1.aar",
+    sha1 = "be24aadea661ee537836169df5026fb8f370af9f",
+    url = "mvn:https://maven.google.com:androidx.profileinstaller:profileinstaller:aar:1.4.1",
 )
 
 remote_file(
     name = "profileinstaller-sources-remote",
-    out = "profileinstaller-1.4.0-sources.jar",
-    sha1 = "d126d45c480aa74f73ba5bee34a7217f6382c44a",
-    url = "mvn:https://maven.google.com:androidx.profileinstaller:profileinstaller:src:1.4.0",
+    out = "profileinstaller-1.4.1-sources.jar",
+    sha1 = "f692a2c2bc83b34bd1e925383fedf7eb8e7a9df8",
+    url = "mvn:https://maven.google.com:androidx.profileinstaller:profileinstaller:src:1.4.1",
 )
 
 android_prebuilt_aar(

@@ -3,16 +3,16 @@
 
 remote_file(
     name = "navigation-runtime-remote",
-    out = "navigation-runtime-2.9.3.aar",
+    out = "navigation-runtime-2.9.2.aar",
     sha1 = "26eec13b175ab2713320c351ea15a73dfcaf49bc",
-    url = "mvn:https://maven.google.com:androidx.navigation:navigation-runtime:aar:2.9.3",
+    url = "mvn:https://maven.google.com:androidx.navigation:navigation-runtime:aar:2.9.2",
 )
 
 remote_file(
     name = "navigation-runtime-sources-remote",
-    out = "navigation-runtime-2.9.3-sources.jar",
-    sha1 = "583998bc63cb1326a39300e8e7973e298d401b1f",
-    url = "mvn:https://maven.google.com:androidx.navigation:navigation-runtime:src:2.9.3",
+    out = "navigation-runtime-2.9.2-sources.jar",
+    sha1 = "a2ce84f2eb6065718f13c50bd172f2878f68ebeb",
+    url = "mvn:https://maven.google.com:androidx.navigation:navigation-runtime:src:2.9.2",
 )
 
 android_prebuilt_aar(
@@ -24,11 +24,11 @@ android_prebuilt_aar(
         # Compile deps
         "//app/libs/androidx/navigation/navigation-runtime-android:navigation-runtime-android",
         # Runtime deps
+        "//app/libs/androidx/navigation/navigation-common:navigation-common",
         "//app/libs/org/jetbrains/kotlinx/kotlinx-coroutines-core:kotlinx-coroutines-core",
         "//app/libs/androidx/lifecycle/lifecycle-viewmodel:lifecycle-viewmodel",
         "//app/libs/androidx/lifecycle/lifecycle-common:lifecycle-common",
         "//app/libs/org/jetbrains/kotlin/kotlin-stdlib:kotlin-stdlib",
         "//app/libs/androidx/lifecycle/lifecycle-runtime:lifecycle-runtime",
-        "//app/libs/androidx/navigation/navigation-common:navigation-common",
     ],
 )

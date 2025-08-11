@@ -72,7 +72,11 @@ androidx.compose.ui:ui-tooling-preview:1.8.3
 androidx.compose.ui:ui-tooling:1.8.3
 
 # Manually added:
-org.jetbrains.kotlin:kotlin-compose-compiler-plugin-embeddable:2.1.0
+org.jetbrains.kotlin:kotlin-compose-compiler-plugin-embeddable:2.2.0
 org.jetbrains.kotlin:kotlin-parcelize-compiler:2.2.0
 org.jetbrains.kotlin:kotlin-parcelize-runtime:2.2.0
 androidx.databinding:databinding-runtime:8.9.1
+io.coil-kt.coil3:coil-core-jvm:3.2.0
+io.coil-kt.coil3:coil-compose-jvm:3.2.0
+io.coil-kt.coil3:coil-network-okhttp-jvm:3.2.0
+io.coil-kt.coil3:coil-svg-jvm:3.2.0

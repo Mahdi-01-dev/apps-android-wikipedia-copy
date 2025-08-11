@@ -3,16 +3,16 @@
 
 remote_file(
     name = "rules-remote",
-    out = "rules-1.7.0.aar",
-    sha1 = "3257d99dcffa8639822b5908cfee6eeb6c99916f",
-    url = "mvn:https://maven.google.com:androidx.test:rules:aar:1.7.0",
+    out = "rules-1.6.1.aar",
+    sha1 = "083456caf9898d3548fa7a2e61a9bdbb6f663cb7",
+    url = "mvn:https://maven.google.com:androidx.test:rules:aar:1.6.1",
 )
 
 remote_file(
     name = "rules-sources-remote",
-    out = "rules-1.7.0-sources.jar",
-    sha1 = "852e9bd26ba64ee982972624d66200c3e36fc177",
-    url = "mvn:https://maven.google.com:androidx.test:rules:src:1.7.0",
+    out = "rules-1.6.1-sources.jar",
+    sha1 = "026657609ab24b0bafa1d87c0078f5a37a73b826",
+    url = "mvn:https://maven.google.com:androidx.test:rules:src:1.6.1",
 )
 
 android_prebuilt_aar(

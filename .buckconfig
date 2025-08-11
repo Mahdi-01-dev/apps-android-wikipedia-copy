@@ -22,3 +22,6 @@
 
 [build]
   execution_platforms = prelude//platforms:default
+
+[android]
+  target_sdk_version = 35

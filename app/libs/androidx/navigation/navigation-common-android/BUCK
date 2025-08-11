@@ -3,16 +3,16 @@
 
 remote_file(
     name = "navigation-common-android-remote",
-    out = "navigation-common-android-2.9.3.aar",
-    sha1 = "a82dd6fde8928d79a438898755fdef83168d86f4",
-    url = "mvn:https://maven.google.com:androidx.navigation:navigation-common-android:aar:2.9.3",
+    out = "navigation-common-android-2.9.2.aar",
+    sha1 = "af17b351912d8d73efc85e738c0150e041492dbc",
+    url = "mvn:https://maven.google.com:androidx.navigation:navigation-common-android:aar:2.9.2",
 )
 
 remote_file(
     name = "navigation-common-android-sources-remote",
-    out = "navigation-common-android-2.9.3-sources.jar",
+    out = "navigation-common-android-2.9.2-sources.jar",
     sha1 = "2372539b974046fd53d36da2997adf60c6ecb583",
-    url = "mvn:https://maven.google.com:androidx.navigation:navigation-common-android:src:2.9.3",
+    url = "mvn:https://maven.google.com:androidx.navigation:navigation-common-android:src:2.9.2",
 )
 
 android_prebuilt_aar(
