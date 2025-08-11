@@ -22,11 +22,11 @@ prebuilt_jar(
     visibility = ["PUBLIC"],
     deps = [
         # Compile deps
-        "//app/libs/io/coil-kt/coil3/coil-core-jvm:coil-core-jvm",
-        "//app/libs/io/coil-kt/coil3/coil-network-core-jvm:coil-network-core-jvm",
+        "//app/libs/io/coil-kt/coil3/coil-core-android:coil-core-android",
+        "//app/libs/io/coil-kt/coil3/coil-network-core-android:coil-network-core-android",
         "//app/libs/org/jetbrains/kotlin/kotlin-stdlib:kotlin-stdlib",
         "//app/libs/com/squareup/okhttp3/okhttp:okhttp",
         # Runtime deps
-        
+
     ],
 )
