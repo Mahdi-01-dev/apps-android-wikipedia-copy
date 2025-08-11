@@ -58,7 +58,7 @@ class ImageInfo {
         var derivative: Derivative? = null
         derivatives.forEach {
             if (it.width in 1..<widthDp) {
-                if ((derivative == null || it.width > derivative.width) && !it.type.contains("ogg") && !it.type.contains("ogv")) {
+                if ((derivative == null || it.width > derivative?.width ?: 0) && !it.type.contains("ogg") && !it.type.contains("ogv")) {
                     derivative = it
                 }
             }

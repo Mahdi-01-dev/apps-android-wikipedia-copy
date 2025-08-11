@@ -25,3 +25,6 @@
 
 [android]
   target_sdk_version = 35
+
+[kotlin]
+  frontend_compiler = defined_by_target

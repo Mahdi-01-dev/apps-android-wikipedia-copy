@@ -64,9 +64,9 @@ class SuggestedEditsImageRecsFragmentViewModel(savedStateHandle: SavedStateHandl
                 return@launch
             }
 
-            recommendation = page.growthimagesuggestiondata.first()
+            recommendation = page?.growthimagesuggestiondata?.firstOrNull() ?: throw RuntimeException()
             val wikiSite = WikiSite.forLanguageCode(langCode)
-            summary = ServiceFactory.getRest(wikiSite).getPageSummary(page.title)
+            summary = ServiceFactory.getRest(wikiSite).getPageSummary(page?.title ?: "")
             pageTitle = summary.getPageTitle(wikiSite)
 
             val thumbUrl = UriUtil.resolveProtocolRelativeUrl(ImageUrlUtil.getUrlForPreferredSize(recommendation.images[0].metadata!!.thumbUrl, Constants.PREFERRED_CARD_THUMBNAIL_SIZE))
@@ -78,7 +78,7 @@ class SuggestedEditsImageRecsFragmentViewModel(savedStateHandle: SavedStateHandl
             // In advance, attempt to insert the image into the wikitext with example parameters, then get a preview,
             // and check whether the preview contains errors, in which case don't insert into the infobox.
 
-            val insertResult = InsertMediaViewModel.insertImageIntoWikiText(langCode, page.revisions.first().contentMain, recommendation.images[0].image,
+            val insertResult = InsertMediaViewModel.insertImageIntoWikiText(langCode, page?.revisions?.firstOrNull()?.contentMain ?: "", recommendation.images[0].image,
                 "caption", "alt", "200px", "thumb", "right", 0, autoInsert = true, attemptInfobox = true)
 
             if (insertResult.second) {

@@ -44,6 +44,7 @@ android_library(
     srcs = glob(["src/main/java/**/*", "src/extra/**/*", "src/debug/**/*"]),
     language = "KOTLIN",
     java_version = "17",
+    k2 = True,
     annotation_processor_params = [
         "room.schemaLocation=/Users/b41z33d/wikipedia/fbsource/apps-android-wikipedia-copy/app/schemas",
     ],

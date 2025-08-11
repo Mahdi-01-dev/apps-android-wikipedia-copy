@@ -188,6 +188,7 @@ private fun getErrorType(caught: Throwable?, pageTitle: PageTitle?): ComposeErro
             isNotLoggedIn(it) -> {
                 return ComposeErrorType.LoggedOut()
             }
+            else -> throw RuntimeException()
         }
     }
     return ComposeErrorType.Generic()

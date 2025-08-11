@@ -28,14 +28,14 @@ object DiffUtil {
             val item = DiffLine(context, it)
             // coalesce diff lines that occur on successive line numbers
             if (lastItem != null &&
-                    ((item.diff.lineNumber - lastItem.diff.lineNumber == 1 && lastItem.diff.type == DiffResponse.DIFF_TYPE_LINE_ADDED && item.diff.type == DiffResponse.DIFF_TYPE_LINE_ADDED) ||
-                            (item.diff.lineNumber - lastItem.diff.lineNumber == 1 && lastItem.diff.type == DiffResponse.DIFF_TYPE_LINE_WITH_SAME_CONTENT && item.diff.type == DiffResponse.DIFF_TYPE_LINE_WITH_SAME_CONTENT) ||
-                            (lastItem.diff.type == DiffResponse.DIFF_TYPE_LINE_REMOVED && item.diff.type == DiffResponse.DIFF_TYPE_LINE_REMOVED))) {
-                if (it.lineNumber > lastItem.lineEnd) {
-                    lastItem.lineEnd = it.lineNumber
+                    ((item.diff.lineNumber - (lastItem?.diff?.lineNumber ?: 0) == 1 && lastItem?.diff?.type == DiffResponse.DIFF_TYPE_LINE_ADDED && item.diff.type == DiffResponse.DIFF_TYPE_LINE_ADDED) ||
+                            (item.diff.lineNumber - (lastItem?.diff?.lineNumber ?: 0) == 1 && lastItem?.diff?.type == DiffResponse.DIFF_TYPE_LINE_WITH_SAME_CONTENT && item.diff.type == DiffResponse.DIFF_TYPE_LINE_WITH_SAME_CONTENT) ||
+                            (lastItem?.diff?.type ?: -1 == DiffResponse.DIFF_TYPE_LINE_REMOVED && item.diff.type == DiffResponse.DIFF_TYPE_LINE_REMOVED))) {
+                if (it.lineNumber > lastItem?.lineEnd ?: 0) {
+                    lastItem?.lineEnd = it.lineNumber
                 }
-                lastItem.parsedText = buildSpannedString {
-                    appendLine(lastItem!!.parsedText)
+                lastItem?.parsedText = buildSpannedString {
+                    appendLine(lastItem?.parsedText)
                     append(item.parsedText)
                 }
             } else {

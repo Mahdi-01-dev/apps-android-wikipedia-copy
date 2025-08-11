@@ -22,7 +22,7 @@ import java.io.File
 
 object ShareUtil {
     private const val APP_PACKAGE_REGEX = "org\\.wikipedia.*"
-    private const val FILE_PROVIDER_AUTHORITY = BuildConfig.APPLICATION_ID + ".fileprovider"
+    private var FILE_PROVIDER_AUTHORITY = "${BuildConfig.APPLICATION_ID}.fileprovider"
     private const val FILE_PREFIX = "file://"
 
     fun shareText(context: Context, subject: String, text: String) {
