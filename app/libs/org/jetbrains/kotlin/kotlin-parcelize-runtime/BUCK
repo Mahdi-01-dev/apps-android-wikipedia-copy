@@ -3,16 +3,16 @@
 
 remote_file(
     name = "kotlin-parcelize-runtime-remote",
-    out = "kotlin-parcelize-runtime-1.9.25.jar",
-    sha1 = "5ddaf36e1f9708ffd4019de9757ba813bd0a1421",
-    url = "mvn:https://repo1.maven.org/maven2:org.jetbrains.kotlin:kotlin-parcelize-runtime:jar:1.9.25",
+    out = "kotlin-parcelize-runtime-2.1.0.jar",
+    sha1 = "223d6229b9c6e8e593b3d87613f950b2c2e00a3f",
+    url = "mvn:https://repo1.maven.org/maven2:org.jetbrains.kotlin:kotlin-parcelize-runtime:jar:2.1.0",
 )
 
 remote_file(
     name = "kotlin-parcelize-runtime-sources-remote",
-    out = "kotlin-parcelize-runtime-1.9.25-sources.jar",
-    sha1 = "178dc7db4a2f72f3b64b528c680dddd48ecf9adf",
-    url = "mvn:https://repo1.maven.org/maven2:org.jetbrains.kotlin:kotlin-parcelize-runtime:src:1.9.25",
+    out = "kotlin-parcelize-runtime-2.1.0-sources.jar",
+    sha1 = "1ea16f0ecd39a0ea3a4a028c9c9dd8e8dfe36c7c",
+    url = "mvn:https://repo1.maven.org/maven2:org.jetbrains.kotlin:kotlin-parcelize-runtime:src:2.1.0",
 )
 
 prebuilt_jar(
@@ -22,8 +22,8 @@ prebuilt_jar(
     visibility = ["PUBLIC"],
     deps = [
         # Compile deps
-        "//app/libs/org/jetbrains/kotlin/kotlin-android-extensions-runtime:kotlin-android-extensions-runtime",
         "//app/libs/org/jetbrains/kotlin/kotlin-stdlib:kotlin-stdlib",
+        "//app/libs/org/jetbrains/kotlin/kotlin-android-extensions-runtime:kotlin-android-extensions-runtime",
         # Runtime deps
         
     ],

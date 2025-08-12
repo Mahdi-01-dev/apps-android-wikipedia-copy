@@ -3,16 +3,16 @@
 
 remote_file(
     name = "kotlin-parcelize-compiler-remote",
-    out = "kotlin-parcelize-compiler-1.9.25.jar",
-    sha1 = "bbc5f48b741047ff4a05665b503555d23325ddef",
-    url = "mvn:https://repo1.maven.org/maven2:org.jetbrains.kotlin:kotlin-parcelize-compiler:jar:1.9.25",
+    out = "kotlin-parcelize-compiler-2.1.0.jar",
+    sha1 = "f02e0c3d2c752b93cacd757cc1c1176ce7a129a0",
+    url = "mvn:https://repo1.maven.org/maven2:org.jetbrains.kotlin:kotlin-parcelize-compiler:jar:2.1.0",
 )
 
 remote_file(
     name = "kotlin-parcelize-compiler-sources-remote",
-    out = "kotlin-parcelize-compiler-1.9.25-sources.jar",
-    sha1 = "178dc7db4a2f72f3b64b528c680dddd48ecf9adf",
-    url = "mvn:https://repo1.maven.org/maven2:org.jetbrains.kotlin:kotlin-parcelize-compiler:src:1.9.25",
+    out = "kotlin-parcelize-compiler-2.1.0-sources.jar",
+    sha1 = "1ea16f0ecd39a0ea3a4a028c9c9dd8e8dfe36c7c",
+    url = "mvn:https://repo1.maven.org/maven2:org.jetbrains.kotlin:kotlin-parcelize-compiler:src:2.1.0",
 )
 
 prebuilt_jar(

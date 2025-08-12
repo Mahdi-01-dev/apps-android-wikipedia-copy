@@ -3,16 +3,16 @@
 
 remote_file(
     name = "compose-compiler-gradle-plugin-remote",
-    out = "compose-compiler-gradle-plugin-2.2.0.jar",
+    out = "compose-compiler-gradle-plugin-2.1.0.jar",
     sha1 = "98e843b12df32f5c694f13c936825565a93e6768",
-    url = "mvn:https://repo1.maven.org/maven2:org.jetbrains.kotlin:compose-compiler-gradle-plugin:jar:2.2.0",
+    url = "mvn:https://repo1.maven.org/maven2:org.jetbrains.kotlin:compose-compiler-gradle-plugin:jar:2.1.0",
 )
 
 remote_file(
     name = "compose-compiler-gradle-plugin-sources-remote",
-    out = "compose-compiler-gradle-plugin-2.2.0-sources.jar",
+    out = "compose-compiler-gradle-plugin-2.1.0-sources.jar",
     sha1 = "e9b2a8075e5a071482c57636f519e5b5c53afd99",
-    url = "mvn:https://repo1.maven.org/maven2:org.jetbrains.kotlin:compose-compiler-gradle-plugin:src:2.2.0",
+    url = "mvn:https://repo1.maven.org/maven2:org.jetbrains.kotlin:compose-compiler-gradle-plugin:src:2.1.0",
 )
 
 prebuilt_jar(
@@ -26,6 +26,6 @@ prebuilt_jar(
         "//app/libs/org/jetbrains/kotlin/kotlin-gradle-plugin-api:kotlin-gradle-plugin-api",
         "//app/libs/org/jetbrains/kotlin/kotlin-gradle-plugin-model:kotlin-gradle-plugin-model",
         # Runtime deps
-        
+
     ],
 )

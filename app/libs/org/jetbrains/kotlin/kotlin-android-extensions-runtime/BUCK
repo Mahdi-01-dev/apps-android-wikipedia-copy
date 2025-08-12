@@ -3,16 +3,16 @@
 
 remote_file(
     name = "kotlin-android-extensions-runtime-remote",
-    out = "kotlin-android-extensions-runtime-2.2.0.jar",
-    sha1 = "2a8c6dd6233d471f34d1774813dd9445f11d605b",
-    url = "mvn:https://repo1.maven.org/maven2:org.jetbrains.kotlin:kotlin-android-extensions-runtime:jar:2.2.0",
+    out = "kotlin-android-extensions-runtime-2.1.0.jar",
+    sha1 = "35f0e6469fdf199216d974d8fea1b3dcef0589d9",
+    url = "mvn:https://repo1.maven.org/maven2:org.jetbrains.kotlin:kotlin-android-extensions-runtime:jar:2.1.0",
 )
 
 remote_file(
     name = "kotlin-android-extensions-runtime-sources-remote",
-    out = "kotlin-android-extensions-runtime-2.2.0-sources.jar",
+    out = "kotlin-android-extensions-runtime-2.1.0-sources.jar",
     sha1 = "b4ffa2ce90411e440d2fdeb43be0dc1d5d133551",
-    url = "mvn:https://repo1.maven.org/maven2:org.jetbrains.kotlin:kotlin-android-extensions-runtime:src:2.2.0",
+    url = "mvn:https://repo1.maven.org/maven2:org.jetbrains.kotlin:kotlin-android-extensions-runtime:src:2.1.0",
 )
 
 prebuilt_jar(
@@ -24,6 +24,6 @@ prebuilt_jar(
         # Compile deps
         "//app/libs/org/jetbrains/kotlin/kotlin-stdlib:kotlin-stdlib",
         # Runtime deps
-        
+
     ],
 )

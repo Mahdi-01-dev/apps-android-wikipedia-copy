@@ -28,3 +28,12 @@
 
 [kotlin]
   frontend_compiler = defined_by_target
+  kotlin_version = 2.1.0
+
+[java]
+  buck2_java_version = 17
+  javacd_enabled = true
+  source_level = 8
+  java_home = /usr/local/java-runtime/impl/17
+  system_modules = all
+  use_jdk_for_system_modules = true
