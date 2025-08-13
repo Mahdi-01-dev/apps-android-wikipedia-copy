@@ -1,9 +1,19 @@
 android_resource(
-    name = "res",
+    name = "res_main",
     package = "org.wikipedia",
     res = "src/main/res",
     deps = [
         "//app/libs/com/google/android/material/material:material",
+    ],
+)
+
+android_resource(
+    name = "res_extra",
+    package = "org.wikipedia",
+    res = "src/extra/res",
+    deps = [
+        "//app/libs/com/google/android/material/material:material",
+        ":res_main",
     ],
 )
 
@@ -60,7 +70,8 @@ android_library(
         "//app/libs/org/jetbrains/kotlin/kotlin-serialization:kotlin-serialization": {},
     },
     deps = [
-        ":res",
+        ":res_main",
+        ":res_extra",
         ":build_config",
         "//app/libs/io/coil-kt/coil3/coil-core-android:coil-core-android",
         "//app/libs/org/jetbrains/kotlin/kotlin-stdlib:kotlin-stdlib",
