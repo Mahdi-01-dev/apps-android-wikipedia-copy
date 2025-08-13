@@ -55,6 +55,9 @@ android_library(
     language = "KOTLIN",
     java_version = "17",
     k2 = True,
+    extra_arguments = [
+        "-XDstringConcat=inline",
+    ],
     annotation_processor_params = [
         "room.schemaLocation=/Users/b41z33d/wikipedia/fbsource/apps-android-wikipedia-copy/app/schemas",
     ],
@@ -99,7 +102,7 @@ android_library(
         "//app/libs/androidx/constraintlayout/constraintlayout:constraintlayout",
         "//app/libs/androidx/core/core-ktx:core-ktx",
         "//app/libs/androidx/appcompat/appcompat:appcompat",
-        # # "//app/libs/com/android/tools/desugar_jdk_libs:desugar_jdk_libs",
+        "//app/libs/com/android/tools/desugar_jdk_libs:desugar_jdk_libs",
         "//app/libs/androidx/drawerlayout/drawerlayout:drawerlayout",
         # "//app/libs/androidx/test/espresso/espresso-contrib:espresso-contrib",
         # "//app/libs/androidx/test/espresso/espresso-core:espresso-core",
@@ -148,5 +151,3 @@ android_library(
         "//app/libs/androidx/databinding/databinding-runtime:databinding-runtime",
     ],
 )
-
-# views, edit, onboarding, talk
