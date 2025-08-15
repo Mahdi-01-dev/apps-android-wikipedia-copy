@@ -22,7 +22,7 @@ prebuilt_jar(
     visibility = ["PUBLIC"],
     deps = [
         # Compile deps
-        "//app/libs/com/squareup/okio/okio:okio",
+        "//app/libs/com/squareup/okio/okio-jvm:okio-jvm",
         "//app/libs/org/jetbrains/kotlin/kotlin-stdlib-jdk8:kotlin-stdlib-jdk8",
         # Runtime deps
         "//app/libs/com/squareup/okhttp3/okhttp:okhttp",

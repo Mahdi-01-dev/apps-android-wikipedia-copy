@@ -24,7 +24,7 @@ prebuilt_jar(
         # Compile deps
         "//app/libs/androidx/lifecycle/lifecycle-runtime-desktop:lifecycle-runtime-desktop",
         "//app/libs/androidx/annotation/annotation:annotation",
-        "//app/libs/org/jetbrains/compose/runtime/runtime-desktop:runtime-desktop",
+        "//app/libs/androidx/compose/runtime/runtime-desktop:runtime-desktop",
         # Runtime deps
         "//app/libs/org/jetbrains/kotlin/kotlin-stdlib:kotlin-stdlib",
         "//app/libs/androidx/lifecycle/lifecycle-common-jvm:lifecycle-common-jvm",

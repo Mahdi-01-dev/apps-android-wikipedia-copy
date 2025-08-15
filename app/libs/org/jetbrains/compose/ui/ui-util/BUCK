@@ -22,10 +22,10 @@ prebuilt_jar(
     visibility = ["PUBLIC"],
     deps = [
         # Compile deps
-        
+
         # Runtime deps
-        "//app/libs/org/jetbrains/compose/collection-internal/collection:collection",
-        "//app/libs/org/jetbrains/compose/ui/ui-uikit:ui-uikit",
+        "//app/libs/androidx/compose/collection-internal/collection:collection",
+        "//app/libs/androidx/compose/ui/ui-uikit:ui-uikit",
         "//app/libs/androidx/compose/ui/ui-util:ui-util",
         "//app/libs/org/jetbrains/kotlin/kotlin-stdlib:kotlin-stdlib",
     ],

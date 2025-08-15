@@ -26,7 +26,7 @@ prebuilt_jar(
         # Runtime deps
         "//app/libs/org/jetbrains/kotlinx/kotlinx-serialization-json-okio:kotlinx-serialization-json-okio",
         "//app/libs/androidx/room/room-common:room-common",
-        "//app/libs/com/squareup/okio/okio:okio",
+        "//app/libs/com/squareup/okio/okio-jvm:okio-jvm",
         "//app/libs/org/jetbrains/kotlin/kotlin-stdlib:kotlin-stdlib",
         "//app/libs/org/jetbrains/kotlinx/kotlinx-serialization-json:kotlinx-serialization-json",
     ],

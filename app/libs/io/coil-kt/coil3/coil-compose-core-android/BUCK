@@ -23,7 +23,7 @@ android_prebuilt_aar(
     deps = [
         # Compile deps
         "//app/libs/io/coil-kt/coil3/coil-core-android:coil-core-android",
-        "//app/libs/org/jetbrains/compose/foundation/foundation:foundation",
+        "//app/libs/androidx/compose/foundation/foundation:foundation",
         "//app/libs/org/jetbrains/kotlin/kotlin-stdlib:kotlin-stdlib",
         # Runtime deps
         "//app/libs/com/google/accompanist/accompanist-drawablepainter:accompanist-drawablepainter",

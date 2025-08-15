@@ -22,13 +22,13 @@ prebuilt_jar(
     visibility = ["PUBLIC"],
     deps = [
         # Compile deps
-        
+
         # Runtime deps
         "//app/libs/org/jetbrains/kotlinx/atomicfu:atomicfu",
         "//app/libs/org/jetbrains/kotlinx/kotlinx-coroutines-core:kotlinx-coroutines-core",
         "//app/libs/androidx/compose/runtime/runtime:runtime",
-        "//app/libs/org/jetbrains/compose/annotation-internal/annotation:annotation",
-        "//app/libs/org/jetbrains/compose/collection-internal/collection:collection",
+        "//app/libs/androidx/compose/annotation-internal/annotation:annotation",
+        "//app/libs/androidx/compose/collection-internal/collection:collection",
         "//app/libs/org/jetbrains/kotlin/kotlin-stdlib:kotlin-stdlib",
     ],
 )

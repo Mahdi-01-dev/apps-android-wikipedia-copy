@@ -26,6 +26,6 @@ android_prebuilt_aar(
         "//app/libs/androidx/compose/runtime/runtime:runtime",
         # Runtime deps
         "//app/libs/org/jetbrains/kotlin/kotlin-stdlib:kotlin-stdlib",
-        "//app/libs/androidx/collection/collection:collection",
+        "//app/libs/androidx/collection/collection-jvm:collection-jvm",
     ],
 )

@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:installLocation="auto"
     tools:node="strict">
+
+    <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="35" />
     <!--
     If the build is intended to be Google Play-updateable, the package name
     should be the same as for Google Play (name depends on Beta or Stable).

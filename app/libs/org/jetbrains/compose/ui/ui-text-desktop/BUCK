@@ -22,17 +22,17 @@ prebuilt_jar(
     visibility = ["PUBLIC"],
     deps = [
         # Compile deps
-        "//app/libs/org/jetbrains/compose/ui/ui-graphics-desktop:ui-graphics-desktop",
+        "//app/libs/androidx/compose/ui/ui-graphics-desktop:ui-graphics-desktop",
         "//app/libs/org/jetbrains/skiko/skiko-awt:skiko-awt",
-        "//app/libs/org/jetbrains/compose/ui/ui-unit-desktop:ui-unit-desktop",
+        "//app/libs/androidx/compose/ui/ui-unit-desktop:ui-unit-desktop",
         # Runtime deps
         "//app/libs/androidx/collection/collection-jvm:collection-jvm",
-        "//app/libs/org/jetbrains/compose/ui/ui-geometry-desktop:ui-geometry-desktop",
+        "//app/libs/androidx/compose/ui/ui-geometry-desktop:ui-geometry-desktop",
         "//app/libs/org/jetbrains/kotlinx/atomicfu-jvm:atomicfu-jvm",
         "//app/libs/org/jetbrains/kotlinx/kotlinx-coroutines-core-jvm:kotlinx-coroutines-core-jvm",
-        "//app/libs/org/jetbrains/compose/runtime/runtime-desktop:runtime-desktop",
-        "//app/libs/org/jetbrains/compose/runtime/runtime-saveable-desktop:runtime-saveable-desktop",
-        "//app/libs/org/jetbrains/compose/ui/ui-util-desktop:ui-util-desktop",
+        "//app/libs/androidx/compose/runtime/runtime-desktop:runtime-desktop",
+        "//app/libs/androidx/compose/runtime/runtime-saveable-desktop:runtime-saveable-desktop",
+        "//app/libs/androidx/compose/ui/ui-util-desktop:ui-util-desktop",
         "//app/libs/androidx/annotation/annotation-jvm:annotation-jvm",
         "//app/libs/org/jetbrains/kotlin/kotlin-stdlib:kotlin-stdlib",
     ],

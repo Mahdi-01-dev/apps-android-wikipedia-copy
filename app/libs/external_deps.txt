@@ -10,10 +10,10 @@ androidx.room:room-runtime:2.7.2
 androidx.test.uiautomator:uiautomator:2.3.0
 com.github.skydoves:balloon:1.6.12
 androidx.browser:browser:1.8.0
-io.coil-kt.coil3:coil-compose:3.2.0
+# io.coil-kt.coil3:coil-compose:3.2.0
 io.coil-kt.coil3:coil-gif:3.2.0
-io.coil-kt.coil3:coil-network-okhttp:3.2.0
-io.coil-kt.coil3:coil-svg:3.2.0
+# io.coil-kt.coil3:coil-network-okhttp:3.2.0
+# io.coil-kt.coil3:coil-svg:3.2.0
 com.google.android.gms:play-services-wallet:19.4.0
 com.google.firebase:firebase-messaging-ktx:24.1.2
 com.google.mlkit:language-id:17.0.6

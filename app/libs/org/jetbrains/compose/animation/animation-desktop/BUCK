@@ -22,14 +22,14 @@ prebuilt_jar(
     visibility = ["PUBLIC"],
     deps = [
         # Compile deps
-        "//app/libs/org/jetbrains/compose/animation/animation-core-desktop:animation-core-desktop",
-        "//app/libs/org/jetbrains/compose/ui/ui-desktop:ui-desktop",
-        "//app/libs/org/jetbrains/compose/ui/ui-geometry-desktop:ui-geometry-desktop",
-        "//app/libs/org/jetbrains/compose/runtime/runtime-desktop:runtime-desktop",
-        "//app/libs/org/jetbrains/compose/foundation/foundation-layout-desktop:foundation-layout-desktop",
+        "//app/libs/androidx/compose/animation/animation-core-desktop:animation-core-desktop",
+        "//app/libs/androidx/compose/ui/ui-desktop:ui-desktop",
+        "//app/libs/androidx/compose/ui/ui-geometry-desktop:ui-geometry-desktop",
+        "//app/libs/androidx/compose/runtime/runtime-desktop:runtime-desktop",
+        "//app/libs/androidx/compose/foundation/foundation-layout-desktop:foundation-layout-desktop",
         # Runtime deps
         "//app/libs/androidx/collection/collection-jvm:collection-jvm",
-        "//app/libs/org/jetbrains/compose/ui/ui-util-desktop:ui-util-desktop",
+        "//app/libs/androidx/compose/ui/ui-util-desktop:ui-util-desktop",
         "//app/libs/org/jetbrains/kotlin/kotlin-stdlib:kotlin-stdlib",
     ],
 )

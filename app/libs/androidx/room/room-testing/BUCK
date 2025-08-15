@@ -28,7 +28,7 @@ android_prebuilt_aar(
         "//app/libs/androidx/room/room-common:room-common",
         "//app/libs/androidx/sqlite/sqlite:sqlite",
         "//app/libs/androidx/room/room-migration:room-migration",
-        "//app/libs/com/squareup/okio/okio:okio",
+        "//app/libs/com/squareup/okio/okio-jvm:okio-jvm",
         "//app/libs/org/jetbrains/kotlin/kotlin-stdlib:kotlin-stdlib",
     ],
 )

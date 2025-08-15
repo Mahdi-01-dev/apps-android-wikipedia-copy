@@ -26,7 +26,7 @@ android_prebuilt_aar(
         # Runtime deps
         "//app/libs/androidx/compose/animation/animation:animation",
         "//app/libs/androidx/compose/runtime/runtime:runtime",
-        "//app/libs/androidx/collection/collection:collection",
+        "//app/libs/androidx/collection/collection-jvm:collection-jvm",
         "//app/libs/androidx/compose/ui/ui:ui",
     ],
 )

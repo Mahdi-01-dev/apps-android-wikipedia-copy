@@ -22,7 +22,7 @@ prebuilt_jar(
     visibility = ["PUBLIC"],
     deps = [
         # Compile deps
-        "//app/libs/org/jetbrains/compose/runtime/runtime-desktop:runtime-desktop",
+        "//app/libs/androidx/compose/runtime/runtime-desktop:runtime-desktop",
         # Runtime deps
         "//app/libs/androidx/collection/collection-jvm:collection-jvm",
         "//app/libs/org/jetbrains/kotlin/kotlin-stdlib:kotlin-stdlib",

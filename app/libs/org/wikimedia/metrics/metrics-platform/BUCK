@@ -25,6 +25,6 @@ prebuilt_jar(
         "//app/libs/com/google/code/gson/gson:gson",
         "//app/libs/com/squareup/okhttp3/okhttp:okhttp",
         # Runtime deps
-        
+
     ],
 )

@@ -26,6 +26,6 @@ prebuilt_jar(
         "//app/libs/junit/junit:junit",
         "//app/libs/com/squareup/okhttp3/okhttp:okhttp",
         # Runtime deps
-        
+
     ],
 )

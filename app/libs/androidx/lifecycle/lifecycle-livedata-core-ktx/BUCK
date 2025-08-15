@@ -3,16 +3,16 @@
 
 remote_file(
     name = "lifecycle-livedata-core-ktx-remote",
-    out = "lifecycle-livedata-core-ktx-2.6.1.aar",
-    sha1 = "58c13cf1fa21b6516e58a8d291b11da864caffbf",
-    url = "mvn:https://maven.google.com:androidx.lifecycle:lifecycle-livedata-core-ktx:aar:2.6.1",
+    out = "lifecycle-livedata-core-ktx-2.9.2.aar",
+    sha1 = "e34d3d98ff629053aaff033eaad3d01feeffd8df",
+    url = "mvn:https://maven.google.com:androidx.lifecycle:lifecycle-livedata-core-ktx:aar:2.9.2",
 )
 
 remote_file(
     name = "lifecycle-livedata-core-ktx-sources-remote",
-    out = "lifecycle-livedata-core-ktx-2.6.1-sources.jar",
-    sha1 = "0679a0782faddfa90863d19babbe2b44ded7d13b",
-    url = "mvn:https://maven.google.com:androidx.lifecycle:lifecycle-livedata-core-ktx:src:2.6.1",
+    out = "lifecycle-livedata-core-ktx-2.9.2-sources.jar",
+    sha1 = "22c51b96f46a5a8fdcbd0215ac0f58addab1f33c",
+    url = "mvn:https://maven.google.com:androidx.lifecycle:lifecycle-livedata-core-ktx:src:2.9.2",
 )
 
 android_prebuilt_aar(
@@ -22,8 +22,8 @@ android_prebuilt_aar(
     visibility = ["PUBLIC"],
     deps = [
         # Compile deps
-        "//app/libs/org/jetbrains/kotlin/kotlin-stdlib:kotlin-stdlib",
         "//app/libs/androidx/lifecycle/lifecycle-livedata-core:lifecycle-livedata-core",
+        "//app/libs/org/jetbrains/kotlin/kotlin-stdlib:kotlin-stdlib",
         # Runtime deps
         
     ],

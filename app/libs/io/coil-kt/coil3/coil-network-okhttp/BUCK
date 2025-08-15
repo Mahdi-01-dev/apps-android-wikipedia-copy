@@ -22,7 +22,7 @@ prebuilt_jar(
     visibility = ["PUBLIC"],
     deps = [
         # Compile deps
-        
+
         # Runtime deps
         "//app/libs/io/coil-kt/coil3/coil-core:coil-core",
         "//app/libs/io/coil-kt/coil3/coil-network-core:coil-network-core",

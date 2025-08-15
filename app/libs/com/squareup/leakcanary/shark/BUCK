@@ -25,6 +25,6 @@ prebuilt_jar(
         "//app/libs/com/squareup/leakcanary/shark-graph:shark-graph",
         # Runtime deps
         "//app/libs/org/jetbrains/kotlin/kotlin-stdlib:kotlin-stdlib",
-        "//app/libs/com/squareup/okio/okio:okio",
+        "//app/libs/com/squareup/okio/okio-jvm:okio-jvm",
     ],
 )

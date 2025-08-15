@@ -25,12 +25,12 @@ prebuilt_jar(
         "//app/libs/org/jetbrains/kotlinx/kotlinx-coroutines-core-jvm:kotlinx-coroutines-core-jvm",
         # Runtime deps
         "//app/libs/androidx/collection/collection-jvm:collection-jvm",
-        "//app/libs/org/jetbrains/compose/ui/ui-desktop:ui-desktop",
+        "//app/libs/androidx/compose/ui/ui-desktop:ui-desktop",
         "//app/libs/org/jetbrains/kotlinx/atomicfu-jvm:atomicfu-jvm",
-        "//app/libs/org/jetbrains/compose/runtime/runtime-desktop:runtime-desktop",
-        "//app/libs/org/jetbrains/compose/ui/ui-util-desktop:ui-util-desktop",
+        "//app/libs/androidx/compose/runtime/runtime-desktop:runtime-desktop",
+        "//app/libs/androidx/compose/ui/ui-util-desktop:ui-util-desktop",
         "//app/libs/androidx/annotation/annotation-jvm:annotation-jvm",
         "//app/libs/org/jetbrains/kotlin/kotlin-stdlib:kotlin-stdlib",
-        "//app/libs/org/jetbrains/compose/ui/ui-unit-desktop:ui-unit-desktop",
+        "//app/libs/androidx/compose/ui/ui-unit-desktop:ui-unit-desktop",
     ],
 )

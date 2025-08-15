@@ -24,7 +24,7 @@ android_prebuilt_aar(
         # Compile deps
         "//app/libs/androidx/core/core:core",
         # Runtime deps
-        "//app/libs/androidx/collection/collection:collection",
+        "//app/libs/androidx/collection/collection-jvm:collection-jvm",
         "//app/libs/androidx/emoji2/emoji2:emoji2",
     ],
 )

@@ -22,11 +22,11 @@ prebuilt_jar(
     visibility = ["PUBLIC"],
     deps = [
         # Compile deps
-        
+
         # Runtime deps
         "//app/libs/org/jetbrains/kotlinx/kotlinx-coroutines-core-jvm:kotlinx-coroutines-core-jvm",
-        "//app/libs/org/jetbrains/compose/runtime/runtime-desktop:runtime-desktop",
-        "//app/libs/org/jetbrains/compose/ui/ui-util-desktop:ui-util-desktop",
+        "//app/libs/androidx/compose/runtime/runtime-desktop:runtime-desktop",
+        "//app/libs/androidx/compose/ui/ui-util-desktop:ui-util-desktop",
         "//app/libs/androidx/annotation/annotation-jvm:annotation-jvm",
         "//app/libs/org/jetbrains/kotlin/kotlin-stdlib:kotlin-stdlib",
         "//app/libs/org/jetbrains/androidx/lifecycle/lifecycle-runtime-compose-desktop:lifecycle-runtime-compose-desktop",

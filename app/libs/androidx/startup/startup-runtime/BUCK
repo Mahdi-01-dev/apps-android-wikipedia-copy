@@ -3,16 +3,16 @@
 
 remote_file(
     name = "startup-runtime-remote",
-    out = "startup-runtime-1.1.1.aar",
-    sha1 = "9d4ba67056aff98b69eadc1477c19a1e67cb9470",
-    url = "mvn:https://maven.google.com:androidx.startup:startup-runtime:aar:1.1.1",
+    out = "startup-runtime-1.2.0.aar",
+    sha1 = "db6080018fb5afc5f1f74243f418fadcfb3e874a",
+    url = "mvn:https://maven.google.com:androidx.startup:startup-runtime:aar:1.2.0",
 )
 
 remote_file(
     name = "startup-runtime-sources-remote",
-    out = "startup-runtime-1.1.1-sources.jar",
-    sha1 = "714974d4ab4858eab9395d3b048002108b62cf0a",
-    url = "mvn:https://maven.google.com:androidx.startup:startup-runtime:src:1.1.1",
+    out = "startup-runtime-1.2.0-sources.jar",
+    sha1 = "0c27e69063a6db38f857dabb7a88cbe452daa017",
+    url = "mvn:https://maven.google.com:androidx.startup:startup-runtime:src:1.2.0",
 )
 
 android_prebuilt_aar(
@@ -24,7 +24,7 @@ android_prebuilt_aar(
         # Compile deps
         
         # Runtime deps
-        "//app/libs/androidx/tracing/tracing:tracing",
         "//app/libs/androidx/annotation/annotation:annotation",
+        "//app/libs/androidx/tracing/tracing:tracing",
     ],
 )

@@ -22,11 +22,11 @@ android_prebuilt_aar(
     visibility = ["PUBLIC"],
     deps = [
         # Compile deps
-        "//app/libs/androidx/collection/collection:collection",
+        "//app/libs/androidx/collection/collection-jvm:collection-jvm",
         "//app/libs/androidx/core/core:core",
         "//app/libs/androidx/customview/customview:customview",
         "//app/libs/androidx/annotation/annotation:annotation",
         # Runtime deps
-        
+
     ],
 )

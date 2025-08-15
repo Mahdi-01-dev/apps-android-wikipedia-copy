@@ -25,7 +25,7 @@ android_prebuilt_aar(
         "//app/libs/androidx/room/room-runtime-android:room-runtime-android",
         # Runtime deps
         "//app/libs/org/jetbrains/kotlinx/kotlinx-coroutines-core:kotlinx-coroutines-core",
-        "//app/libs/androidx/collection/collection:collection",
+        "//app/libs/androidx/collection/collection-jvm:collection-jvm",
         "//app/libs/androidx/annotation/annotation:annotation",
         "//app/libs/androidx/room/room-common:room-common",
         "//app/libs/androidx/sqlite/sqlite-framework:sqlite-framework",

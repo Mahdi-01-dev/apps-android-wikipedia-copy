@@ -22,20 +22,20 @@ prebuilt_jar(
     visibility = ["PUBLIC"],
     deps = [
         # Compile deps
-        
+
         # Runtime deps
         "//app/libs/org/jetbrains/kotlinx/atomicfu:atomicfu",
         "//app/libs/org/jetbrains/skiko/skiko:skiko",
-        "//app/libs/org/jetbrains/compose/collection-internal/collection:collection",
-        "//app/libs/org/jetbrains/compose/runtime/runtime:runtime",
-        "//app/libs/org/jetbrains/compose/ui/ui-uikit:ui-uikit",
-        "//app/libs/org/jetbrains/compose/ui/ui:ui",
+        "//app/libs/androidx/compose/collection-internal/collection:collection",
+        "//app/libs/androidx/compose/runtime/runtime:runtime",
+        "//app/libs/androidx/compose/ui/ui-uikit:ui-uikit",
+        "//app/libs/androidx/compose/ui/ui:ui",
         "//app/libs/org/jetbrains/kotlin/kotlin-stdlib:kotlin-stdlib",
         "//app/libs/androidx/compose/foundation/foundation:foundation",
-        "//app/libs/org/jetbrains/compose/annotation-internal/annotation:annotation",
-        "//app/libs/org/jetbrains/compose/foundation/foundation-layout:foundation-layout",
-        "//app/libs/org/jetbrains/compose/ui/ui-util:ui-util",
-        "//app/libs/org/jetbrains/compose/animation/animation:animation",
-        "//app/libs/org/jetbrains/compose/ui/ui-text:ui-text",
+        "//app/libs/androidx/compose/annotation-internal/annotation:annotation",
+        "//app/libs/androidx/compose/foundation/foundation-layout:foundation-layout",
+        "//app/libs/androidx/compose/ui/ui-util:ui-util",
+        "//app/libs/androidx/compose/animation/animation:animation",
+        "//app/libs/androidx/compose/ui/ui-text:ui-text",
     ],
 )

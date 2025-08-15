@@ -3,16 +3,16 @@
 
 remote_file(
     name = "savedstate-ktx-remote",
-    out = "savedstate-ktx-1.2.1.aar",
-    sha1 = "b86d338d91b1c26193a42b1d87be9bb02123fa16",
-    url = "mvn:https://maven.google.com:androidx.savedstate:savedstate-ktx:aar:1.2.1",
+    out = "savedstate-ktx-1.3.1.aar",
+    sha1 = "6a7369e15f63e373ad51e7a993cb79f34e310018",
+    url = "mvn:https://maven.google.com:androidx.savedstate:savedstate-ktx:aar:1.3.1",
 )
 
 remote_file(
     name = "savedstate-ktx-sources-remote",
-    out = "savedstate-ktx-1.2.1-sources.jar",
-    sha1 = "396eb83ce13cac3986e1e8a8b60f60ac0447ffbf",
-    url = "mvn:https://maven.google.com:androidx.savedstate:savedstate-ktx:src:1.2.1",
+    out = "savedstate-ktx-1.3.1-sources.jar",
+    sha1 = "d281a4d66d1b5ed25c21373dedb46a67918618d9",
+    url = "mvn:https://maven.google.com:androidx.savedstate:savedstate-ktx:src:1.3.1",
 )
 
 android_prebuilt_aar(

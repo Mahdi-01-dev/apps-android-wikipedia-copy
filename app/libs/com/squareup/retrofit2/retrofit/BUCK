@@ -24,6 +24,6 @@ prebuilt_jar(
         # Compile deps
         "//app/libs/com/squareup/okhttp3/okhttp:okhttp",
         # Runtime deps
-        
+
     ],
 )

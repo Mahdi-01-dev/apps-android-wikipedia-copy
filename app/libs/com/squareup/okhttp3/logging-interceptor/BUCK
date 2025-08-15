@@ -25,6 +25,6 @@ prebuilt_jar(
         "//app/libs/org/jetbrains/kotlin/kotlin-stdlib-jdk8:kotlin-stdlib-jdk8",
         "//app/libs/com/squareup/okhttp3/okhttp:okhttp",
         # Runtime deps
-        
+
     ],
 )

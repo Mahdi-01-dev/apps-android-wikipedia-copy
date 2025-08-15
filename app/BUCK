@@ -27,6 +27,8 @@ android_binary(
     keystore = "//keystores:debug",
     manifest = ":android_manifest",
     min_sdk_version = 21,
+    disable_pre_dex = True,
+    use_split_dex = True,
     deps = [":lib"],
 )
 
