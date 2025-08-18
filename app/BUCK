@@ -80,7 +80,7 @@ android_library(
         ":build_config",
         "//app/libs/io/coil-kt/coil3/coil-core-android:coil-core-android",
         "//app/libs/org/jetbrains/kotlin/kotlin-stdlib:kotlin-stdlib",
-        "//app/libs/androidx/preference/preference:preference",
+        "//app/libs/androidx/preference/preference-ktx:preference-ktx",
         "//app/libs/org/maplibre/gl/android-sdk:android-sdk",
         "//app/libs/org/maplibre/gl/android-plugin-annotation-v9:android-plugin-annotation-v9",
         # "//app/libs/androidx/test/espresso/espresso-intents:espresso-intents",
