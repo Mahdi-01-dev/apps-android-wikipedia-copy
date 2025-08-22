@@ -1,0 +1,24 @@
+# Increase timeouts for external repository fetching
+build --repository_cache=~/.cache/bazel/repository_cache
+fetch --repository_cache=~/.cache/bazel/repository_cache
+
+# Increase timeouts for external dependencies
+build --experimental_repository_cache_hardlinks
+
+# Enable bzlmod and handle external dependencies better
+common --enable_bzlmod
+common --registry=https://bcr.bazel.build
+
+# Increase retries for external repositories
+build --experimental_repository_downloader_retries=5
+
+# Coursier specific environment variables
+build --action_env=COURSIER_CACHE=/Users/b41z33d/Library/Caches/Coursier
+build --action_env=COURSIER_PARALLEL_DOWNLOAD_COUNT=8
+build --action_env=CS_JAVA_OPTS=-Xmx4g
+
+# Coursier version overrides
+build --action_env=COURSIER_FORCE_VERSION=org.jetbrains.kotlin:kotlin-stdlib:2.1.0,org.jetbrains.kotlin:kotlin-stdlib-common:2.1.0,org.jetbrains.kotlin:kotlin-stdlib-jdk7:2.1.0,org.jetbrains.kotlin:kotlin-stdlib-jdk8:2.1.0,androidx.lifecycle:lifecycle-common:2.9.2,androidx.lifecycle:lifecycle-runtime:2.9.2,androidx.emoji2:emoji2:1.4.0,androidx.collection:collection:1.5.0,androidx.compose.runtime:runtime:1.8.3,androidx.compose.ui:ui-geometry:1.8.3,androidx.compose.ui:ui-graphics:1.8.3,androidx.compose.ui:ui-text:1.8.3,androidx.compose.ui:ui-unit:1.8.3,androidx.compose.ui:ui-util:1.8.3,androidx.lifecycle:lifecycle-viewmodel:2.9.2,androidx.savedstate:savedstate:1.3.1,androidx.collection:collection-jvm:1.5.0,androidx.compose.animation:animation-core:1.8.3
+
+# Reasonable timeout scaling for quick error resolution (4 minutes)
+build --experimental_scale_timeouts=1.0
