@@ -1,6 +1,8 @@
 load("@rules_android//android:rules.bzl", "android_binary", "android_library")
 load("@rules_kotlin//kotlin:android.bzl", "kt_android_library")
 load("@rules_kotlin//kotlin:jvm.bzl", "kt_jvm_library")
+load("@rules_kotlin//kotlin:kotlin.bzl", "kt_compiler_plugin")
+load("@rules_kotlin//kotlin:core.bzl", "kt_kotlinc_options")
 
 android_library(
     name = "res",
@@ -58,6 +60,32 @@ java_library(
     visibility = ["//visibility:public"],
 )
 
+kt_kotlinc_options(
+    name = "kotlin_options",
+    jvm_target = "17",
+)
+
+kt_compiler_plugin(
+    name = "compose_compiler_plugin",
+    id = "org.jetbrains.kotlin.compose.compiler",
+    deps = ["@maven//:org_jetbrains_kotlin_kotlin_compose_compiler_plugin_embeddable"],
+    target_embedded_compiler = True,
+)
+
+kt_compiler_plugin(
+    name = "parcelize_plugin",
+    id = "org.jetbrains.kotlin.parcelize",
+    deps = ["@maven//:org_jetbrains_kotlin_kotlin_parcelize_compiler"],
+    target_embedded_compiler = True,
+)
+
+kt_compiler_plugin(
+    name = "serialization_plugin",
+    id = "org.jetbrains.kotlinx.serialization",
+    deps = ["@maven//:org_jetbrains_kotlin_kotlin_serialization"],
+    target_embedded_compiler = True,
+)
+
 kt_android_library(
     name = "lib",
     srcs = glob([
@@ -79,10 +107,11 @@ kt_android_library(
     javacopts = [
         "-Aroom.schemaLocation=app/schemas",
     ],
+    kotlinc_opts = ":kotlin_options",
     plugins = [
-        "@maven//:org_jetbrains_kotlin_kotlin_serialization",
-        "@maven//:org_jetbrains_kotlin_kotlin_parcelize_compiler",
-        "@maven//:org_jetbrains_kotlin_kotlin_compose_compiler_plugin_embeddable",
+        ":compose_compiler_plugin",
+        ":parcelize_plugin",
+        ":serialization_plugin",
     ],
     deps = [
         ":build_config",
@@ -126,8 +155,8 @@ kt_android_library(
         "@maven//:org_jetbrains_kotlin_kotlin_parcelize_runtime",
         "@maven//:org_jetbrains_kotlin_kotlin_stdlib_jdk8",
         "@maven//:org_jetbrains_kotlinx_kotlinx_coroutines_android",
-        "@maven//:org_jetbrains_kotlinx_kotlinx_coroutines_core",
-        "@maven//:org_jetbrains_kotlinx_kotlinx_serialization_json",
+        "@maven//:org_jetbrains_kotlinx_kotlinx_coroutines_core_jvm",
+        "@maven//:org_jetbrains_kotlinx_kotlinx_serialization_json_jvm",
         "@maven//:com_squareup_okhttp3_okhttp",
         "@maven//:com_squareup_okhttp3_logging_interceptor",
         "@maven//:com_squareup_okhttp3_okhttp_tls",
