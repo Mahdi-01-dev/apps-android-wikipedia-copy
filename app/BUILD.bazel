@@ -72,7 +72,6 @@ kt_kotlinc_options(
     name = "kotlin_options",
     jvm_target = "17",
     x_use_k2 = False,
-    x_multi_platform = True,
 )
 
 kt_compiler_plugin(
@@ -102,7 +101,7 @@ kt_android_library(
         "src/main/java/**/*.java",
         "src/main/java/**/*.kt",
         "src/extra/**/*.kt",
-        "src/debug/**/*.kt",
+        #"src/debug/**/*.kt",
     ]),
     resource_files = glob(
         ["src/main/res/**", "src/extra/res/**"],
@@ -175,10 +174,9 @@ kt_android_library(
         "@maven//:org_apache_commons_commons_lang3",
         "@maven//:org_jsoup_jsoup",
         "@maven//:io_getstream_photoview",
-        "@maven//:com_squareup_leakcanary_plumber_android",
-        "@maven//:com_squareup_leakcanary_leakcanary_android",
+        #"@maven//:com_squareup_leakcanary_plumber_android",
+        #"@maven//:com_squareup_leakcanary_leakcanary_android",
         "@maven//:org_wikimedia_metrics_metrics_platform",
-        "@maven//:androidx_lifecycle_lifecycle_viewmodel",
     ],
 )
 

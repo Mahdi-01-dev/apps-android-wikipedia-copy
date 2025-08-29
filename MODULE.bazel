@@ -84,7 +84,6 @@ maven.install(
         "io.coil-kt.coil3:coil-compose-android:3.2.0@aar",
         "io.coil-kt.coil3:coil-network-okhttp-jvm:3.2.0",
         "io.coil-kt.coil3:coil-svg-android:3.2.0@aar",
-        "androidx.lifecycle:lifecycle-viewmodel:2.9.2@aar",
     ],
     repositories = [
         "https://repo1.maven.org/maven2",
