@@ -4,6 +4,8 @@ bazel_dep(name = "rules_kotlin", version = "2.1.9")
 bazel_dep(name = "bazel_skylib", version = "1.7.1")
 bazel_dep(name = "rules_java", version = "8.13.0")
 
+#register_toolchains("//app:kotlin_toolchain_19")
+
 remote_android_extensions = use_extension(
     "@rules_android//bzlmod_extensions:android_extensions.bzl",
     "remote_android_tools_extensions")
@@ -16,8 +18,8 @@ register_toolchains("@androidsdk//:sdk-toolchain", "@androidsdk//:all")
 
 rules_kotlin_extensions = use_extension("@rules_kotlin//src/main/starlark/core/repositories:bzlmod_setup.bzl", "rules_kotlin_extensions")
 rules_kotlin_extensions.kotlinc_version(
-    version = "2.1.20",
-    sha256 = "a118197b0de55ffab2bc8d5cd03a5e39033cfb53383d6931bc761dec0784891a"
+    version = "2.1.0",
+    sha256 = "b6698d5728ad8f9edcdd01617d638073191d8a03139cc538a391b4e3759ad297"
 )
 use_repo(rules_kotlin_extensions, "com_github_google_ksp", "com_github_jetbrains_kotlin", "com_github_jetbrains_kotlin_git", "com_github_pinterest_ktlint", "kotlinx_serialization_core_jvm", "kotlinx_serialization_json", "kotlinx_serialization_json_jvm")
 
@@ -46,8 +48,8 @@ maven.install(
         "com.google.gms:google-services:4.4.3",
         "com.android.installreferrer:installreferrer:2.2@aar",
         "org.jsoup:jsoup:1.21.1",
-        "org.jetbrains.kotlin:kotlin-serialization:2.1.20",
-        "org.jetbrains.kotlin:kotlin-stdlib-jdk8:2.1.20",
+        "org.jetbrains.kotlin:kotlin-serialization:2.1.0",
+        "org.jetbrains.kotlin:kotlin-stdlib-jdk8:2.1.0",
         "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.10.2",
         "org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.10.2",
         "org.jetbrains.kotlinx:kotlinx-serialization-json-jvm:1.9.0",
@@ -74,14 +76,15 @@ maven.install(
         "androidx.compose.ui:ui:1.8.3@aar",
         "androidx.compose.ui:ui-tooling-preview:1.8.3@aar",
         "androidx.compose.ui:ui-tooling:1.8.3@aar",
-        "org.jetbrains.kotlin:kotlin-compose-compiler-plugin-embeddable:2.1.20",
-        "org.jetbrains.kotlin:kotlin-parcelize-compiler:2.1.20",
-        "org.jetbrains.kotlin:kotlin-parcelize-runtime:2.1.20",
+        "org.jetbrains.kotlin:kotlin-compose-compiler-plugin-embeddable:2.1.0",
+        "org.jetbrains.kotlin:kotlin-parcelize-compiler:2.1.0",
+        "org.jetbrains.kotlin:kotlin-parcelize-runtime:2.1.0",
         "androidx.databinding:databinding-runtime:8.9.1@aar",
         "io.coil-kt.coil3:coil-core-android:3.2.0@aar",
         "io.coil-kt.coil3:coil-compose-android:3.2.0@aar",
         "io.coil-kt.coil3:coil-network-okhttp-jvm:3.2.0",
         "io.coil-kt.coil3:coil-svg-android:3.2.0@aar",
+        "androidx.lifecycle:lifecycle-viewmodel:2.9.2@aar",
     ],
     repositories = [
         "https://repo1.maven.org/maven2",
@@ -89,10 +92,10 @@ maven.install(
     ],
     version_conflict_policy = "default",
     additional_coursier_options = [
-        "-V", "org.jetbrains.kotlin:kotlin-stdlib:2.1.20",
-        "-V", "org.jetbrains.kotlin:kotlin-stdlib-common:2.1.20",
-        "-V", "org.jetbrains.kotlin:kotlin-stdlib-jdk7:2.1.20",
-        "-V", "org.jetbrains.kotlin:kotlin-stdlib-jdk8:2.1.20",
+        "-V", "org.jetbrains.kotlin:kotlin-stdlib:2.1.0",
+        "-V", "org.jetbrains.kotlin:kotlin-stdlib-common:2.1.0",
+        "-V", "org.jetbrains.kotlin:kotlin-stdlib-jdk7:2.1.0",
+        "-V", "org.jetbrains.kotlin:kotlin-stdlib-jdk8:2.1.0",
         "-V", "androidx.lifecycle:lifecycle-common:2.9.2",
         "-V", "androidx.lifecycle:lifecycle-runtime:2.9.2",
         "-V", "androidx.emoji2:emoji2:1.4.0",

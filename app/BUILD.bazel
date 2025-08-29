@@ -2,7 +2,15 @@ load("@rules_android//android:rules.bzl", "android_binary", "android_library")
 load("@rules_kotlin//kotlin:android.bzl", "kt_android_library")
 load("@rules_kotlin//kotlin:jvm.bzl", "kt_jvm_library")
 load("@rules_kotlin//kotlin:kotlin.bzl", "kt_compiler_plugin")
-load("@rules_kotlin//kotlin:core.bzl", "kt_kotlinc_options")
+load("@rules_kotlin//kotlin:core.bzl", "kt_kotlinc_options", "define_kt_toolchain")
+
+define_kt_toolchain(
+    name = "kotlin_toolchain_19",
+    language_version = "1.9",
+    api_version = "1.9",
+    jvm_target = "17",
+    kotlinc_options = ":kotlin_options",
+)
 
 android_library(
     name = "res",
@@ -63,6 +71,8 @@ java_library(
 kt_kotlinc_options(
     name = "kotlin_options",
     jvm_target = "17",
+    x_use_k2 = False,
+    x_multi_platform = True,
 )
 
 kt_compiler_plugin(
@@ -107,12 +117,12 @@ kt_android_library(
     javacopts = [
         "-Aroom.schemaLocation=app/schemas",
     ],
-    kotlinc_opts = ":kotlin_options",
     plugins = [
         ":compose_compiler_plugin",
         ":parcelize_plugin",
         ":serialization_plugin",
     ],
+    kotlinc_opts = ":kotlin_options",
     deps = [
         ":build_config",
         "@maven//:org_maplibre_gl_android_sdk",
@@ -168,6 +178,7 @@ kt_android_library(
         "@maven//:com_squareup_leakcanary_plumber_android",
         "@maven//:com_squareup_leakcanary_leakcanary_android",
         "@maven//:org_wikimedia_metrics_metrics_platform",
+        "@maven//:androidx_lifecycle_lifecycle_viewmodel",
     ],
 )
 
