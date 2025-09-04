@@ -25,6 +25,6 @@ android_prebuilt_aar(
         "//app/libs/io/coil-kt/coil3/coil-core-android:coil-core-android",
         "//app/libs/org/jetbrains/kotlin/kotlin-stdlib:kotlin-stdlib",
         # Runtime deps
-        
+
     ],
 )

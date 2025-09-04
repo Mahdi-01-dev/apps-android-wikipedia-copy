@@ -142,7 +142,7 @@ class WikipediaApp : Application() {
 
         connectionStateMonitor.enable()
 
-        //setupLeakCanary()
+        setupLeakCanary()
 
         // See Javadocs and http://developer.android.com/tools/support-library/index.html#rev23-4-0
         AppCompatDelegate.setCompatVectorFromResourcesEnabled(true)
