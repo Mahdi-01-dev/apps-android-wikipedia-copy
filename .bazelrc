@@ -22,3 +22,9 @@ build --action_env=COURSIER_FORCE_VERSION=org.jetbrains.kotlin:kotlin-stdlib:2.1
 
 # Reasonable timeout scaling for quick error resolution (4 minutes)
 build --experimental_scale_timeouts=1.0
+
+# Increase stderr output limit to see full compilation errors
+build --experimental_ui_max_stdouterr_bytes=10485760
+
+# Enable verbose failures to see command lines
+build --verbose_failures
